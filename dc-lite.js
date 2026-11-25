@@ -109,6 +109,41 @@
     Array.from(el.childNodes).forEach((c) => processNode(c, scope));
   }
 
+  /* Adaptations écran : bouton ☰ pour le menu principal, réduction des maquettes de taille fixe */
+  let navOpen = false;
+  function enhance(mount) {
+    const first = mount.firstElementChild;
+    const fixed = !!(first && /width:\s*1280px/.test(first.getAttribute('style') || ''));
+    document.documentElement.classList.toggle('dc-fixed', fixed);
+    const nav = mount.querySelector('header nav[aria-label="Menu principal"]');
+    if (!fixed && nav && !mount.querySelector('.dc-burger')) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'dc-burger';
+      b.setAttribute('aria-expanded', navOpen ? 'true' : 'false');
+      b.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>Menu';
+      if (navOpen) nav.classList.add('open');
+      b.addEventListener('click', () => {
+        navOpen = !navOpen;
+        nav.classList.toggle('open', navOpen);
+        b.setAttribute('aria-expanded', navOpen ? 'true' : 'false');
+      });
+      nav.parentNode.insertBefore(b, nav);
+    }
+    const root = mount.firstElementChild;
+    if (root && /width:\s*1280px/.test(root.getAttribute('style') || '')) {
+      const fit = () => { root.style.zoom = Math.min(1, document.documentElement.clientWidth / 1280); };
+      fit();
+      if (!window.__dcFit) { window.__dcFit = true; window.addEventListener('resize', fit); }
+      if (!document.querySelector('.dc-fixed-note')) {
+        const n = document.createElement('div');
+        n.className = 'dc-fixed-note';
+        n.textContent = 'Maquette du menu sur ordinateur, réduite pour votre écran. Sur téléphone, le menu s’ouvre avec un bouton ☰ (voir les autres maquettes).';
+        mount.parentNode.insertBefore(n, mount);
+      }
+    }
+  }
+
   function boot() {
     const tpl = document.getElementById('dc-template');
     const mount = document.getElementById('dc-root');
@@ -144,6 +179,7 @@
       document.adoptNode(wrap);
       const y = window.scrollY;
       mount.replaceChildren(...wrap.childNodes);
+      enhance(mount);
       window.scrollTo(0, y);
     };
     inst.__render();

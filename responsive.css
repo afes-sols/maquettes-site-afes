@@ -1,0 +1,52 @@
+/* Adaptations tablette et téléphone, communes à toutes les maquettes.
+   Les maquettes de taille fixe (menus, 1280 x 640) sont exclues : elles sont
+   simplement réduites pour tenir dans l'écran (classe dc-fixed posée par dc-lite.js). */
+.dc-burger{display:none;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid #DDDDDD;border-radius:5px;background:#fff;color:#000;font-family:Livvic,sans-serif;font-weight:700;font-size:15px;cursor:pointer}
+.dc-burger:hover{color:#BF6525;border-color:#BF6525}
+html.dc-fixed body{background:#fff}
+
+@media (max-width: 1240px){
+  html:not(.dc-fixed) #dc-root .pbn{right:0 !important}
+}
+
+@media (max-width: 1100px){
+  html:not(.dc-fixed) #dc-root header nav[aria-label="Menu principal"]{display:none !important}
+  html:not(.dc-fixed) #dc-root header nav[aria-label="Menu principal"].open{display:flex !important;flex-direction:column;align-items:flex-start;gap:0 !important;flex-basis:100%;order:9;border-top:1px solid #ECECEC;padding:8px 0 14px}
+  html:not(.dc-fixed) #dc-root header nav[aria-label="Menu principal"].open > *{width:100%}
+  html:not(.dc-fixed) .dc-burger{display:inline-flex}
+  html:not(.dc-fixed) #dc-root header .wrap{gap:12px !important}
+}
+
+@media (max-width: 900px){
+  html:not(.dc-fixed) #dc-root aside, html:not(.dc-fixed) #dc-root nav.side{max-width:none !important;flex-basis:100% !important}
+  html:not(.dc-fixed) #dc-root .fcard img{width:100% !important;flex-basis:100% !important;aspect-ratio:2/1 !important}
+}
+
+@media (max-width: 700px){
+  html:not(.dc-fixed) #dc-root .topbar{font-size:12px}
+  html:not(.dc-fixed) #dc-root .topbar img{height:22px !important}
+  html:not(.dc-fixed) #dc-root header img[alt="AFES"]{height:60px !important}
+  html:not(.dc-fixed) #dc-root header .wrap{min-height:80px !important;flex-wrap:wrap !important;justify-content:space-between !important}
+  html:not(.dc-fixed) #dc-root header .icon-btn, html:not(.dc-fixed) #dc-root header .search{display:none !important}
+  html:not(.dc-fixed) #dc-root header .btn-fill{min-height:40px;padding:0 12px;font-size:14px}
+  html:not(.dc-fixed) #dc-root header a[style*="font-weight:700;text-decoration:none;color:#5F3114"]{display:none}
+  html:not(.dc-fixed) .dc-burger{order:2;margin-left:auto}
+  html:not(.dc-fixed) #dc-root header .wrap > div:last-child, html:not(.dc-fixed) #dc-root header .wrap > a.btn-fill{order:3}
+  html:not(.dc-fixed) #dc-root h1{font-size:clamp(28px, 8vw, 40px) !important}
+  html:not(.dc-fixed) #dc-root .title{font-size:24px !important}
+  html:not(.dc-fixed) #dc-root .sub-title{font-size:18px !important}
+  html:not(.dc-fixed) #dc-root section{padding-top:44px !important;padding-bottom:44px !important}
+  html:not(.dc-fixed) #dc-root .hero, html:not(.dc-fixed) #dc-root .banner{min-height:0 !important}
+  html:not(.dc-fixed) #dc-root .wrap > div[style*="border-radius:10px"],
+  html:not(.dc-fixed) #dc-root .wrap > div > div[style*="border-radius:10px"]{padding:22px !important}
+  html:not(.dc-fixed) #dc-root h3[style*="font-size:50px"]{font-size:40px !important}
+  html:not(.dc-fixed) #dc-root h4[style*="font-size:22px"]{font-size:18px !important}
+  html:not(.dc-fixed) #dc-root p[style*="font-size:26px"]{font-size:19px !important}
+  html:not(.dc-fixed) #dc-root .mcard{padding:18px !important;gap:16px !important}
+  html:not(.dc-fixed) #dc-root .mcard h3{font-size:22px !important}
+  html:not(.dc-fixed) #dc-root .btn-fill, html:not(.dc-fixed) #dc-root .btn-cont{white-space:normal;text-align:center}
+  .dc-tools{left:8px;bottom:8px;font-size:12px}
+}
+
+.dc-fixed-note{display:none;background:#FFF6D6;border-bottom:1px solid #E5C66A;color:#3E2716;font:600 13px/1.4 "Open Sans",sans-serif;padding:8px 12px;text-align:center}
+@media (max-width: 1279px){ .dc-fixed-note{display:block} }
