@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Espace adhérent · option 2 : tableau de bord · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#F7F7F7;font-size:16px;line-height:1.6}
+.wrap{max-width:1170px;margin:0 auto;padding:0 15px;box-sizing:border-box}
+.root h1,.root h2,.root h3{font-family:Livvic,sans-serif;margin:0;line-height:1.2}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.topbar{background:#5F3114;color:#fff;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-family:Livvic,sans-serif;font-weight:600}
+.top{font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;color:#000;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.btn-fill{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;background:#BF6525;border:1px solid #BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-fill:hover{background:#5F3114;border-color:#5F3114;color:#fff}
+.btn-cont{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 14px;border-radius:5px;border:1px solid #BF6525;color:#BF6525;background:transparent;font-family:Livvic,sans-serif;font-weight:600;font-size:14px;text-decoration:none;box-sizing:border-box}
+.btn-cont:hover{background:#BF6525;color:#fff}
+.side{background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:2px}
+.side button{display:flex;align-items:center;gap:12px;width:100%;text-align:left;min-height:46px;padding:0 14px;border:0;border-radius:6px;background:transparent;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;color:#000;cursor:pointer}
+.side button:hover{background:#F7F7F7;color:#BF6525}
+.side button.on{background:#5F3114;color:#fff}
+.panel{background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:24px}
+.panel h3{color:#5F3114;font-size:19px;font-weight:800;margin-bottom:8px}
+.k{font-family:Livvic,sans-serif;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#237D3D}
+.rv{display:flex;gap:16px;align-items:center;border-bottom:1px solid #ECECEC;padding:14px 0;flex-wrap:wrap}
+.rv b{font-family:Livvic,sans-serif;font-weight:800;color:#5EB26C;font-size:24px;min-width:48px}
+.bar{height:10px;border-radius:5px;background:#EBE6E0;overflow:hidden}
+.foot{background:#000 url(assets/bg-footer.jpg) center/cover;color:#BFC0C1}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="root">
+<div class="mq">Maquette de travail GT Com · Espace adhérent, option 2 : tableau de bord avec menu latéral (cliquez sur le menu de gauche)</div>
+<div class="topbar"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;flex-wrap:wrap">
+  <span style="display:flex;align-items:center;gap:12px"><img src="assets/iuss-blanc.png" alt="IUSS" style="height:28px"> L'AFES est la branche française de l'Union Internationale de Science du Sol (IUSS, International Union of Soil Science)</span>
+  <span style="display:flex;gap:16px;align-items:center"><span>Bonjour [Prénom]</span><a href="#">MON ESPACE</a><a href="#" style="font-weight:500">Déconnexion</a></span>
+</div></div>
+<header style="background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:104px;flex-wrap:wrap">
+    <img src="assets/logo-afes.svg" alt="AFES" style="height:84px">
+    <nav aria-label="Menu principal" style="display:flex;gap:30px;flex-wrap:wrap"><a href="#" class="top">L'AFES</a><a href="#" class="top">Les sols</a><a href="#" class="top">Nos missions</a><a href="#" class="top">Se former</a><a href="#" class="top">Projets</a><a href="#" class="top">Quoi de neuf ?</a></nav>
+    <a href="#" class="btn-fill">Adhérer</a>
+  </div>
+</header>
+
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:30px;padding-top:40px;padding-bottom:70px;align-items:flex-start">
+  <nav class="side" aria-label="Mon espace" style="flex:1 1 240px;max-width:270px">
+    <div style="display:flex;gap:12px;align-items:center;padding:8px 10px 16px;border-bottom:1px solid #ECECEC;margin-bottom:8px">
+      <span style="width:46px;height:46px;border-radius:50%;background:#EBE6E0;color:#5F3114;display:flex;align-items:center;justify-content:center;font-family:Livvic,sans-serif;font-weight:800">[P]</span>
+      <div><strong style="font-family:Livvic,sans-serif;color:#5F3114">[Prénom Nom]</strong><br><span style="font-size:13px;color:#237D3D;font-weight:700">Adhérent·e 2026</span></div>
+    </div>
+    <sc-for list="{{tabs}}" as="t" hint-placeholder-count="7">
+      <button class="{{t.cls}}" aria-current="{{t.current}}" onClick="{{t.pick}}">{{t.label}}</button>
+    </sc-for>
+  </nav>
+
+  <main style="flex:999 1 600px;min-width:0;display:flex;flex-direction:column;gap:24px">
+    <sc-if value="{{isHome}}" hint-placeholder-val="{{ true }}">
+      <h1 style="font-size:34px;color:#5F3114;font-weight:800">Bonjour [Prénom]</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+        <div class="panel" style="border-left:5px solid #BF6525"><span class="k">Mon adhésion</span><h3>2026 · jusqu'au 30/11/2026</h3><div class="bar" style="margin:8px 0 14px"><div style="width:98%;height:100%;background:#BF6525"></div></div><a href="#" class="btn-fill">Renouveler pour 2027</a></div>
+        <div class="panel"><span class="k">Prochain Rendez-vous de l'AFES</span><h3>#08 · [date]</h3><p style="font-size:15px;margin-bottom:12px">Projets présentés : [à annoncer]</p><a href="#" class="btn-cont">M'inscrire</a></div>
+        <div class="panel"><span class="k">Dernier compte rendu</span><h3>Conseil d'Administration du 22/09/2026</h3><p style="font-size:15px;margin-bottom:12px">Publié le 13 octobre 2026</p><a href="#" class="btn-cont">Lire</a></div>
+        <div class="panel"><span class="k">Dernière Lettre</span><h3>La Lettre de l'Association n°[…]</h3><p style="font-size:15px;margin-bottom:12px">[trimestre]</p><a href="#" class="btn-cont">Lire</a></div>
+        <div class="panel"><span class="k">Tarif adhérent</span><h3>Formations de l'AFES</h3><p style="font-size:15px;margin-bottom:12px">[Réduction à définir] sur PromoSolsTerrain, Fresque du Sol…</p><a href="#" class="btn-cont">Voir les formations</a></div>
+        <div class="panel" style="background:#5F3114;color:#fff;border-color:#5F3114"><span class="k" style="color:#5EB26C">Sur e-Sol</span><h3 style="color:#fff">Mes communautés</h3><p style="font-size:15px;margin-bottom:12px;color:#EBE6E0">[Fresque du Sol, GT Communication & Jeunes…]</p><a href="#" class="btn-cont" style="border-color:#fff;color:#fff">Ouvrir e-Sol ↗</a></div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{isRdv}}" hint-placeholder-val="{{ false }}">
+      <div class="panel">
+        <span class="k">Réservé aux adhérent·es</span>
+        <h1 style="font-size:30px;color:#5F3114;font-weight:800;margin:4px 0 6px">Les Rendez-vous de l'AFES</h1>
+        <p style="margin-bottom:10px">Revoir les enregistrements et les présentations.</p>
+        <div class="rv"><b>#07</b><div style="flex:1 1 300px"><strong>Festival européen Sols &amp; Arts · centre de ressources de l'AFES</strong><br><span style="font-size:14px;color:#818284">Mercredi 22 avril 2026</span></div><a href="#" class="btn-cont">Revoir</a></div>
+        <div class="rv"><b>#06</b><div style="flex:1 1 300px"><strong>Bourse DEMOLON · Reconnaissance des compétences en pédologie</strong><br><span style="font-size:14px;color:#818284">Mercredi 10 décembre 2025</span></div><a href="#" class="btn-cont">Revoir</a></div>
+        <div class="rv"><b>#05</b><div style="flex:1 1 300px"><strong>Journée Mondiale des Sols 2025 · Festival des Sols 2026</strong><br><span style="font-size:14px;color:#818284">Jeudi 25 septembre 2025</span></div><a href="#" class="btn-cont">Revoir</a></div>
+        <div class="rv"><b>#04</b><div style="flex:1 1 300px"><strong>SOILSCAPE · Musée des Sols</strong><br><span style="font-size:14px;color:#818284">Mardi 20 mai 2025</span></div><a href="#" class="btn-cont">Revoir</a></div>
+        <div class="rv"><b>#03</b><div style="flex:1 1 300px"><strong>PromoSolEduc · CURIOSOIL</strong><br><span style="font-size:14px;color:#818284">Mardi 1er avril 2025</span></div><a href="#" class="btn-cont">Revoir</a></div>
+        <div class="rv"><b>#02</b><div style="flex:1 1 300px"><strong>PromoSolsTerrain · Réseau des référents qualité des sols forestiers</strong><br><span style="font-size:14px;color:#818284">Jeudi 6 mars 2025</span></div><a href="#" class="btn-cont">Revoir</a></div>
+        <div class="rv" style="border-bottom:0"><b>#01</b><div style="flex:1 1 300px"><strong>Les Journées d'Étude des Sols · Soil Judging Contest 2025</strong><br><span style="font-size:14px;color:#818284">Mardi 28 janvier 2025</span></div><a href="#" class="btn-cont">Revoir</a></div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{isAdh}}" hint-placeholder-val="{{ false }}">
+      <div class="panel">
+        <span class="k">Mon adhésion</span>
+        <h1 style="font-size:30px;color:#5F3114;font-weight:800;margin:4px 0 14px">Adhésion 2026, valable jusqu'au 30 novembre 2026</h1>
+        <p style="margin-bottom:16px">L'adhésion se fait par année civile. Les adhésions réalisées à partir du 1er décembre 2026 valent pour 2027.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px"><a href="#" class="btn-fill">Renouveler pour 2027 (HelloAsso)</a><a href="#" class="btn-cont">Télécharger mon reçu [si disponible]</a></div>
+        <h3>Historique</h3>
+        <div class="rv"><strong style="flex:1">2026</strong><span>[type d'adhésion]</span><span style="color:#237D3D;font-weight:700">Réglée</span></div>
+        <div class="rv" style="border-bottom:0"><strong style="flex:1">2025</strong><span>[type d'adhésion]</span><span style="color:#237D3D;font-weight:700">Réglée</span></div>
+        <p style="font-size:13px;color:#818284;margin-top:10px">Données à relier à HelloAsso ou au fichier des adhérent·es : à voir avec le webmaster.</p>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{isOther}}" hint-placeholder-val="{{ false }}">
+      <div class="panel" style="min-height:300px">
+        <span class="k">{{curLabel}}</span>
+        <h1 style="font-size:30px;color:#5F3114;font-weight:800;margin:4px 0 14px">{{curLabel}}</h1>
+        <p style="color:#818284">[Rubrique à construire sur le même modèle : liste des contenus réservés, filtrables, avec date et bouton.]</p>
+      </div>
+    </sc-if>
+  </main>
+</div>
+<footer class="foot"><div class="wrap" style="padding:40px 15px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px"><img src="assets/logo-afes-blanc.png" alt="AFES" style="width:176px"><span style="font-size:14px">© 2023 AFES - Tous droits réservés</span></div></footer>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { tab: 'home' }; }
+  renderVals() {
+    const defs = [['home', 'Accueil'], ['adh', 'Mon adhésion'], ['rdv', 'Rendez-vous de l’AFES'], ['vie', 'Vie associative'], ['lettre', 'La Lettre'], ['avantages', 'Mes avantages'], ['profil', 'Mon profil']];
+    const cur = this.state.tab;
+    const tabs = defs.map(([id, label]) => ({ label, cls: id === cur ? 'on' : '', current: id === cur ? 'page' : 'false', pick: () => this.setState({ tab: id }) }));
+    const curLabel = (defs.find((d) => d[0] === cur) || defs[0])[1];
+    return {
+      tabs, curLabel,
+      isHome: cur === 'home', isRdv: cur === 'rdv', isAdh: cur === 'adh',
+      isOther: ['vie', 'lettre', 'avantages', 'profil'].includes(cur)
+    };
+  }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

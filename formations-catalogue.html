@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Formations · Catalogue · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.65}
+.wrap{max-width:1170px;margin:0 auto;padding:0 15px;box-sizing:border-box}
+.root h1,.root h2,.root h3,.root h4{font-family:Livvic,sans-serif;margin:0;line-height:1.2}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.topbar{background:#5F3114;color:#fff;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-family:Livvic,sans-serif;font-weight:600}
+.top{font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;color:#000;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.top:hover,.top.on{color:#BF6525}
+.icon-btn{width:44px;height:44px;border:1px solid #DDDDDD;border-radius:5px;background:#fff;color:#818284;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.btn-fill{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;background:#BF6525;border:1px solid #BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-fill:hover{background:#5F3114;border-color:#5F3114;color:#fff}
+.btn-cont{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;border:1px solid #BF6525;color:#BF6525;background:transparent;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-cont:hover{background:#BF6525;color:#fff}
+.btn-cont.small{min-height:34px;font-size:15px;padding:0 14px;text-transform:none}
+.btn-white{border-color:#fff;color:#fff}.btn-white:hover{background:#fff;color:#5F3114}
+.sub-title{font-family:Livvic,sans-serif;font-weight:800;font-size:22px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:34px;color:#5F3114;margin:4px 0 14px}
+.vague{display:block;width:160px;height:10px;margin-bottom:22px}
+.banner{background:#3a2a1a url(assets/bg-header.jpg) center/cover}
+.filt{font-family:Livvic,sans-serif;font-weight:600;font-size:15px;min-height:42px;padding:0 18px;border-radius:5px;border:1px solid #BF6525;background:#fff;color:#BF6525;cursor:pointer}
+.filt:hover{background:#FCEBDD}
+.filt.on{background:#BF6525;color:#fff}
+.fcard{background:#fff;border:1px solid #ECECEC;border-radius:10px;overflow:hidden;display:flex;flex-wrap:wrap}
+.fcard h3{color:#5F3114;font-weight:800;font-size:24px}
+.facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px 20px;font-size:15px}
+.facts b{font-family:Livvic,sans-serif;color:#237D3D;font-weight:700}
+.tag{display:inline-flex;align-items:center;padding:1px 10px;border-radius:4px;background:#EBE6E0;color:#5F3114;font-size:13px;font-weight:600}
+.tag.st-open{background:#237D3D;color:#fff}.tag.st-soon{background:#F9BF92}
+.step{background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.step span{font-family:Livvic,sans-serif;font-weight:800;font-size:40px;color:#5EB26C;line-height:1}
+.faq details{border-bottom:1px solid #ECECEC;padding:14px 0}
+.faq summary{font-family:Livvic,sans-serif;font-weight:700;font-size:18px;color:#5F3114;cursor:pointer}
+.foot{background:#000 url(assets/bg-footer.jpg) center/cover;color:#BFC0C1}
+.foot a{color:#BFC0C1;text-decoration:none}.foot a:hover{color:#fff}
+.foot h3{color:#fff;font-size:20px;font-weight:700;margin-bottom:12px}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.newlabel{display:none}
+.show-new .new{outline:2px dashed #5EB26C;outline-offset:6px;border-radius:8px}
+.show-new .newlabel{display:inline-flex;align-items:center;background:#237D3D;color:#fff;font-family:Livvic,sans-serif;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:2px 10px;border-radius:999px;line-height:1.6}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="{{rootClass}}">
+<div class="mq">Maquette de travail GT Com · Espace Formations, catalogue (remplace la page actuelle « Se former ») · filtres cliquables</div>
+
+<div class="topbar"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;flex-wrap:wrap">
+  <span style="display:flex;align-items:center;gap:12px"><img src="assets/iuss-blanc.png" alt="IUSS" style="height:28px"> L'AFES est la branche française de l'Union Internationale de Science du Sol (IUSS, International Union of Soil Science)</span>
+  <a href="#" style="display:flex;align-items:center;gap:6px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="8" r="5"></circle><path d="M3 22c1-5 4.5-8 9-8s8 3 9 8z"></path></svg>CONNEXION</a>
+</div></div>
+<header style="background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:104px;flex-wrap:wrap">
+    <a href="#" aria-label="AFES, accueil"><img src="assets/logo-afes.svg" alt="AFES" style="height:84px;display:block"></a>
+    <nav aria-label="Menu principal" style="display:flex;gap:30px;flex-wrap:wrap;justify-content:center">
+      <a href="#" class="top">L'AFES</a><a href="#" class="top">Les sols</a><a href="#" class="top">Nos missions</a><a href="#" class="top on" aria-current="page">Se former</a><a href="#" class="top">Projets</a><a href="#" class="top">Quoi de neuf ?</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button class="icon-btn" aria-label="Rechercher une ressource"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></button>
+      <a href="#" class="btn-fill">Adhérer</a>
+    </div>
+  </div>
+</header>
+
+<section class="banner" style="position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;text-align:center">
+  <div style="position:absolute;inset:0;background:rgba(0,0,0,.35)"></div>
+  <div style="position:relative;display:flex;flex-direction:column;gap:10px">
+    <h1 style="color:#fff;font-size:60px;font-weight:800">Se former</h1>
+    <p style="color:#fff;font-weight:700;font-size:15px">Accueil / Se former</p>
+  </div>
+</section>
+
+<section style="padding:80px 0 40px">
+  <div class="wrap">
+    <span class="sub-title">Formations continues proposées par l'AFES</span>
+    <h2 class="title">Se former aux sols avec des expert·es reconnu·es</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="new" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center" role="group" aria-label="Filtrer les formations">
+      <span class="newlabel">Nouveau · filtres</span>
+      <sc-for list="{{filters}}" as="f" hint-placeholder-count="5">
+        <button class="filt {{f.cls}}" aria-pressed="{{f.pressed}}" onClick="{{f.pick}}">{{f.label}}</button>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 80px">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:26px">
+    <sc-for list="{{cards}}" as="c" hint-placeholder-count="4">
+      <article class="fcard">
+        <img src="{{c.img}}" alt="" style="flex:0 1 300px;width:300px;max-width:100%;aspect-ratio:1;object-fit:cover;display:block">
+        <div style="flex:1 1 420px;padding:26px 30px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag">{{c.tag}}</span><span class="tag {{c.stateCls}}">{{c.state}}</span></div>
+          <h3>{{c.title}}</h3>
+          <p>{{c.text}}</p>
+          <ul class="facts new">
+            <li><b>Format :</b> {{c.format}}</li>
+            <li><b>Public :</b> {{c.public}}</li>
+            <li><b>Prochaine session :</b> {{c.session}}</li>
+            <li><b>Tarif :</b> {{c.price}}</li>
+          </ul>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px"><a href="#" class="btn-fill">{{c.cta}}</a><a href="#" class="btn-cont small" style="min-height:42px">Voir la fiche</a></div>
+        </div>
+      </article>
+    </sc-for>
+    <p style="font-size:14px;color:#818284">Vous souhaitez plus d'information concernant ces formations ? Contactez [la personne référente formations].</p>
+  </div>
+</section>
+
+<section class="new" style="background:#F7F7F7;padding:80px 0;margin:0 12px">
+  <div class="wrap">
+    <span class="newlabel" style="margin-bottom:10px">Nouveau · piste de revenus</span>
+    <span class="sub-title">Collectivités, entreprises, établissements</span>
+    <h2 class="title">Une formation pour votre structure</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-bottom:30px">
+      <div class="step"><span>1</span><h3 style="color:#5F3114;font-size:20px">Vous décrivez votre besoin</h3><p>Sensibiliser des équipes, monter en compétence sur le terrain, animer un temps fort.</p></div>
+      <div class="step"><span>2</span><h3 style="color:#5F3114;font-size:20px">Nous construisons le programme</h3><p>Avec les expert·es du réseau de l'AFES, à partir des formations existantes.</p></div>
+      <div class="step"><span>3</span><h3 style="color:#5F3114;font-size:20px">La formation a lieu chez vous</h3><p>Sur site, sur vos parcelles ou à distance. [Délai et conditions à préciser.]</p></div>
+    </div>
+    <a href="#" class="btn-fill">Demander un devis</a>
+  </div>
+</section>
+
+<section class="new" style="padding:50px 0;margin:16px 12px 0">
+  <div class="wrap"><div style="background:#5F3114;color:#fff;border-radius:10px;padding:30px 34px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+    <div style="flex:1 1 520px"><span class="sub-title" style="color:#5EB26C">Après la formation</span><p style="font-size:17px;margin-top:6px">Chaque formation a sa communauté sur <strong>e-Sol</strong> : animateur·rices de la Fresque du Sol, apprenant·es PromoSolsTerrain, référent·es sols forestiers. On y continue d'échanger.</p></div>
+    <a href="#" class="btn-cont btn-white">Découvrir e-Sol ↗</a>
+  </div></div>
+</section>
+
+<section class="new faq" style="padding:70px 0;margin:16px 12px 0">
+  <div class="wrap" style="max-width:900px">
+    <span class="newlabel" style="margin-bottom:10px">Nouveau</span>
+    <span class="sub-title">Questions fréquentes</span>
+    <h2 class="title">Avant de vous inscrire</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <details open><summary>Ma formation peut-elle être financée ?</summary><p style="margin-top:8px">[Réponse à fournir : prise en charge par l'employeur, OPCO, certification de l'organisme…]</p></details>
+    <details><summary>Les adhérent·es ont-ils un tarif préférentiel ?</summary><p style="margin-top:8px">[Réponse à fournir.]</p></details>
+    <details><summary>Reçoit-on une attestation ?</summary><p style="margin-top:8px">[Réponse à fournir.]</p></details>
+    <details><summary>Comment être prévenu·e des prochaines sessions ?</summary><p style="margin-top:8px">Inscrivez-vous à la liste de diffusion des formations ci-dessous.</p></details>
+  </div>
+</section>
+
+<section style="padding:60px 0;background:#F7F7F7">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+    <h2 style="font-size:24px;color:#5F3114;font-weight:800;flex:1 1 520px">Liste de diffusion pour être tenu informé des formations coordonnées ou proposées par l'AFES</h2>
+    <a href="#" class="btn-cont">S'inscrire</a>
+  </div>
+</section>
+
+<section style="padding:80px 0">
+  <div class="wrap">
+    <span class="sub-title">Carte interactive</span>
+    <h2 class="title">Formations initiales en sciences du sol</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <p style="margin-bottom:20px">La carte des formations diplômantes (licence et master) qui abordent les sciences du sol. [Bloc actuel inchangé.]</p>
+    <div style="height:260px;border-radius:10px;background:#EBE6E0;display:flex;align-items:center;justify-content:center;color:#5F3114;font-family:Livvic,sans-serif;font-weight:600">[Carte interactive actuelle]</div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;padding-top:60px;padding-bottom:40px">
+    <div><img src="assets/logo-afes-blanc.png" alt="AFES" style="width:176px"></div>
+    <div><h3>Menu</h3><ul><li><a href="#">L'AFES</a></li><li><a href="#">Les sols</a></li><li><a href="#">Nos missions</a></li><li><a href="#">Se former</a></li><li><a href="#">Projets</a></li><li><a href="#">Actualités</a></li></ul></div>
+    <div><h3>Informations</h3><ul><li><a href="#">Contact</a></li><li><a href="#">Mentions légales</a></li><li><a href="#">Kit de communication</a></li></ul></div>
+    <div><h3>Espace adhérents</h3><p style="margin-bottom:16px">Accéder à du contenu "Premium" pour les adhérents de l'AFES</p><a href="#" class="btn-cont" style="color:#BFC0C1">Connexion</a></div>
+  </div>
+  <div class="wrap" style="padding-bottom:24px;font-size:14px">© 2023 AFES - Tous droits réservés</div>
+</footer>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":4700}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { f: 'all' }; }
+  renderVals() {
+    const show = this.props.showNew ?? true;
+    const all = [
+      { cat: 'terrain', img: 'assets/f-promosols.png', tag: 'Terrain', state: 'Inscriptions ouvertes', title: 'Se former à la description de sol sur le terrain', text: 'Intégrer le dispositif PromoSolsTerrain pour appréhender la diversité des sols français, en se confrontant à 4 fosses pédologiques par session et en échangeant avec ses pairs.', format: '4 h à distance + 2 jours sur le terrain', public: '[à préciser]', session: '[date] · [lieu]', price: '[adhérent / non-adhérent]', cta: 'S’inscrire' },
+      { cat: 'animation', img: 'assets/f-fresque.png', tag: 'Animation', state: 'Inscriptions ouvertes', title: 'Devenir animateur·rice pro de la Fresque du Sol', text: 'Maîtriser un atelier collaboratif de 3 heures sur les enjeux des sols, être référencé·e par l’ADEME et rejoindre une communauté d’expert·es engagée.', format: '[format]', public: 'Animateur·rices de la Fresque du Sol', session: '[date] · [lieu]', price: '[adhérent / non-adhérent]', cta: 'S’inscrire' },
+      { cat: 'foret', img: 'assets/f-iprsols.png', tag: 'Forêt', state: '[Statut]', title: 'Devenir référent·e sur la qualité des sols forestiers', text: 'Une formation nationale issue du projet IPRSol, portée par des expert·es reconnu·es : des outils concrets de diagnostic et une communauté pour préserver les sols forestiers.', format: '[format]', public: '[à préciser]', session: '[date] · [lieu]', price: '[adhérent / non-adhérent]', cta: 'S’inscrire' },
+      { cat: 'humide', img: 'assets/f-solredox.png', tag: 'Zones humides', state: 'En construction', title: 'Se former à la description des sols de zones humides et à l’application SolRedOx', text: 'Mieux caractériser les sols hydromorphes pour une identification plus efficace des zones humides.', format: '[à venir]', public: '[à venir]', session: 'Bientôt', price: '[à venir]', cta: 'Être prévenu·e' }
+    ];
+    const defs = [['all', 'Toutes'], ['terrain', 'Terrain'], ['animation', 'Animation'], ['foret', 'Forêt'], ['humide', 'Zones humides']];
+    const cur = this.state.f;
+    const filters = defs.map(([id, label]) => ({ label, cls: id === cur ? 'on' : '', pressed: id === cur ? 'true' : 'false', pick: () => this.setState({ f: id }) }));
+    const cards = all.filter((c) => cur === 'all' || c.cat === cur).map((c) => ({
+      ...c,
+      stateCls: c.state === 'En construction' ? 'st-soon' : (c.state === 'Inscriptions ouvertes' ? 'st-open' : '')
+    }));
+    return { rootClass: show ? 'root show-new' : 'root', filters, cards };
+  }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

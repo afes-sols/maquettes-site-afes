@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Accueil C · Orientation et projets · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.65}
+.wrap{max-width:1170px;margin:0 auto;padding:0 15px;box-sizing:border-box}
+.root h1,.root h2,.root h3,.root h4{font-family:Livvic,sans-serif;margin:0;line-height:1.2}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.topbar{background:#5F3114;color:#fff;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-family:Livvic,sans-serif;font-weight:600}
+.top{font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;color:#000;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.top:hover{color:#BF6525}
+.icon-btn{width:44px;height:44px;border:1px solid #DDDDDD;border-radius:5px;background:#fff;color:#818284;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.btn-fill{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;background:#BF6525;border:1px solid #BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-fill:hover{background:#5F3114;border-color:#5F3114;color:#fff}
+.btn-cont{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;border:1px solid #BF6525;color:#BF6525;background:transparent;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-cont:hover{background:#BF6525;color:#fff}
+.btn-cont.small{min-height:32px;font-size:15px;padding:0 14px;text-transform:none}
+.btn-white{border-color:#fff;color:#fff}.btn-white:hover{background:#fff;color:#5F3114}
+.sub-title{font-family:Livvic,sans-serif;font-weight:800;font-size:22px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:34px;color:#5F3114;text-transform:uppercase;margin:4px 0 14px}
+.vague{display:block;width:160px;height:10px;margin-bottom:22px}
+.hero{background:#3a2a1a url(assets/bg-header.jpg) center/cover}
+.sols{background:#2b1d10 url(assets/bg-sols.jpg) center/cover}
+.mcard{background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:24px 28px;display:flex;flex-direction:column;gap:10px}
+.mcard h3{color:#5EB26C;font-weight:800;font-size:26px;text-transform:uppercase}
+.chip{display:inline-flex;align-items:center;min-height:34px;padding:0 12px;border-radius:5px;border:1px solid #ECECEC;background:#F7F7F7;color:#5F3114;font-family:Livvic,sans-serif;font-weight:600;font-size:14px;text-decoration:none}
+.chip:hover{border-color:#BF6525;color:#BF6525}
+.pcard{background:#fff;border:1px solid #ECECEC;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:#000}
+.pcard:hover{border-color:#BF6525}
+.pcard h3{color:#5F3114;font-weight:800;font-size:21px}
+.tag{display:inline-flex;align-items:center;padding:1px 10px;border-radius:4px;background:#EBE6E0;color:#5F3114;font-size:13px;font-weight:600}
+.prof{font-family:Livvic,sans-serif;font-weight:600;font-size:16px;min-height:44px;padding:0 18px;border-radius:5px;border:1px solid #BF6525;background:#fff;color:#BF6525;cursor:pointer}
+.prof:hover{background:#FCEBDD}
+.prof.on{background:#BF6525;color:#fff}
+.route{display:flex;flex-direction:column;gap:4px;border:1px solid #ECECEC;border-radius:10px;padding:16px 18px;text-decoration:none;color:#000;background:#F7F7F7}
+.route:hover{border-color:#BF6525}
+.foot{background:#000 url(assets/bg-footer.jpg) center/cover;color:#BFC0C1}
+.foot a{color:#BFC0C1;text-decoration:none}.foot a:hover{color:#fff}
+.foot h3{color:#fff;font-size:20px;font-weight:700;margin-bottom:12px}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.newlabel{display:none}
+.show-new .new{outline:2px dashed #5EB26C;outline-offset:6px;border-radius:8px}
+.show-new .newlabel{display:inline-flex;align-items:center;background:#237D3D;color:#fff;font-family:Livvic,sans-serif;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:2px 10px;border-radius:999px;line-height:1.6}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="{{rootClass}}">
+<div class="mq">Maquette de travail GT Com · Accueil, variante C « orienter et montrer les projets » · cliquez sur les profils</div>
+
+<div class="topbar"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;flex-wrap:wrap">
+  <span style="display:flex;align-items:center;gap:12px"><img src="assets/iuss-blanc.png" alt="IUSS" style="height:28px"> L'AFES est la branche française de l'Union Internationale de Science du Sol (IUSS, International Union of Soil Science)</span>
+  <a href="#" style="display:flex;align-items:center;gap:6px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="8" r="5"></circle><path d="M3 22c1-5 4.5-8 9-8s8 3 9 8z"></path></svg>CONNEXION</a>
+</div></div>
+<header style="background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:104px;flex-wrap:wrap">
+    <a href="#" aria-label="AFES, accueil"><img src="assets/logo-afes.svg" alt="AFES" style="height:84px;display:block"></a>
+    <nav aria-label="Menu principal" style="display:flex;gap:30px;flex-wrap:wrap;justify-content:center">
+      <a href="#" class="top">L'AFES</a><a href="#" class="top">Les sols</a><a href="#" class="top">Nos missions</a><a href="#" class="top new">Se former</a><a href="#" class="top new">Projets</a><a href="#" class="top">Quoi de neuf ?</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button class="icon-btn" aria-label="Rechercher une ressource"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></button>
+      <a href="#" class="btn-fill">Adhérer</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="position:relative;min-height:480px;display:flex;align-items:center">
+  <div style="position:absolute;inset:0;background:rgba(0,0,0,.3)"></div>
+  <div class="wrap" style="position:relative;width:100%;display:flex;flex-direction:column;gap:18px;padding-bottom:80px">
+    <div style="display:inline-flex;align-items:center;gap:14px;background:#EBE6E0;border-radius:40px;padding:5px 22px 5px 5px;align-self:flex-start"><span style="background:#237D3D;color:#fff;border-radius:30px;padding:4px 18px;font-family:Livvic,sans-serif;font-weight:500">AFES</span><span style="color:#BF6525;font-family:Livvic,sans-serif;font-weight:500">Au service des sols depuis 1934</span></div>
+    <h1 style="color:#fff;font-size:60px;font-weight:800;max-width:640px">AFES<br>Association Française pour l'Étude du Sol</h1>
+    <p style="color:#fff;font-size:20px;max-width:560px">Un centre de ressources pour mieux connaître les sols et les enjeux de leur préservation</p>
+  </div>
+</section>
+
+<section class="wrap new" style="position:relative;margin-top:-90px">
+  <div style="background:#fff;border-radius:10px;box-shadow:0 12px 34px rgba(0,0,0,.14);padding:30px 34px;display:flex;flex-direction:column;gap:18px">
+    <span class="newlabel" style="align-self:flex-start">Nouveau · cliquez sur un profil</span>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center" role="group" aria-label="Je suis">
+      <span class="sub-title" style="margin-right:8px">Je suis…</span>
+      <sc-for list="{{profiles}}" as="p" hint-placeholder-count="5">
+        <button class="prof {{p.cls}}" aria-pressed="{{p.pressed}}" onClick="{{p.pick}}">{{p.label}}</button>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px">
+      <sc-for list="{{routes}}" as="r" hint-placeholder-count="4">
+        <a href="#" class="route"><span style="font-family:Livvic,sans-serif;font-weight:800;font-size:13px;color:#237D3D">{{r.kind}}</span><strong style="font-family:Livvic,sans-serif;color:#5F3114;font-size:18px;line-height:1.25">{{r.title}}</strong><span style="font-size:14px">{{r.text}}</span></a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section class="new" style="padding:80px 0;margin:30px 12px 0">
+  <div class="wrap">
+    <span class="newlabel" style="margin-bottom:10px">Nouveau</span>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+      <div><span class="sub-title">En ce moment</span><h2 class="title">Nos projets</h2><img class="vague" src="assets/vague-ocre.svg" alt=""></div>
+      <a href="#" class="btn-cont" style="margin-bottom:22px">Tous les projets</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:26px">
+      <a href="#" class="pcard"><img src="assets/p-jms.png" alt="" style="width:100%;aspect-ratio:1000/600;object-fit:cover;display:block"><div style="padding:20px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="background:#237D3D;color:#fff">5 décembre 2026</span><span class="tag">Animer</span></div><h3>Journée Mondiale des Sols 2026</h3><p style="font-size:15px">Organisez ou rejoignez un événement partout en France.</p></div></a>
+      <a href="#" class="pcard"><img src="assets/p-festival.png" alt="" style="width:100%;aspect-ratio:1000/600;object-fit:cover;display:block"><div style="padding:20px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag">Art et science</span><span class="tag">SOILSCAPE</span></div><h3>Festival européen Sols &amp; Arts</h3><p style="font-size:15px">Quand les artistes s'emparent des sols.</p></div></a>
+      <a href="#" class="pcard"><img src="assets/p-soilscape.jpg" alt="" style="width:100%;aspect-ratio:1000/600;object-fit:cover;display:block"><div style="padding:20px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag">Horizon Europe</span><span class="tag">Animer</span></div><h3>SOILSCAPE</h3><p style="font-size:15px">Le projet européen auquel participe l'AFES.</p></div></a>
+      <a href="#" class="pcard"><img src="assets/p-fresque.jpg" alt="" style="width:100%;aspect-ratio:1000/600;object-fit:cover;display:block"><div style="padding:20px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag">Jeu sérieux</span><span class="tag">Animer</span></div><h3>La Fresque du Sol</h3><p style="font-size:15px">50 cartes et 3 h pour comprendre les sols.</p></div></a>
+      <a href="#" class="pcard"><img src="assets/p-demolon.png" alt="" style="width:100%;aspect-ratio:1000/600;object-fit:cover;display:block"><div style="padding:20px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag">Jeunes chercheur·ses</span><span class="tag">Reconnaître et fédérer</span></div><h3>Bourses Demolon</h3><p style="font-size:15px">Soutenir les jeunes chercheur·ses.</p></div></a>
+      <a href="#" class="pcard"><img src="assets/p-egs.png" alt="" style="width:100%;aspect-ratio:1000/600;object-fit:contain;background:#fff;display:block"><div style="padding:20px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag">Revue</span><span class="tag">Valoriser</span></div><h3>Étude et Gestion des Sols</h3><p style="font-size:15px">La revue francophone des sciences du sol.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:90px 0;background:#F7F7F7">
+  <div class="wrap">
+    <span class="sub-title">Que faisons nous ?</span>
+    <h2 class="title">Nos missions</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px">
+      <li class="mcard"><img src="assets/ico-star.svg" alt="" style="width:45px;height:40px"><h3>Valoriser</h3><p>Valoriser les connaissances en sciences du sol</p><div class="new" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px"><a href="#" class="chip">Centre de ressources</a><a href="#" class="chip">Réseau e-Sol</a><a href="#" class="chip">Étude et Gestion des Sols</a></div><a href="#" class="btn-cont small" style="align-self:flex-start;margin-top:6px">Découvrir</a></li>
+      <li class="mcard"><img src="assets/ico-hands.svg" alt="" style="width:50px;height:40px"><h3>Reconnaitre et fédérer</h3><p>Reconnaître les compétences en sciences du sol</p><div class="new" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px"><a href="#" class="chip">PromoSolsTerrain</a><a href="#" class="chip">Bourses Demolon</a><a href="#" class="chip">Référents sols forestiers</a></div><a href="#" class="btn-cont small" style="align-self:flex-start;margin-top:6px">Découvrir</a></li>
+      <li class="mcard"><img src="assets/ico-magic.svg" alt="" style="width:45px;height:40px"><h3>Animer</h3><p>Animer des échanges entre acteurs de la société civile et experts</p><div class="new" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px"><a href="#" class="chip">Journée Mondiale des Sols</a><a href="#" class="chip">JES</a><a href="#" class="chip">Webinaires</a><a href="#" class="chip">Fresque du Sol</a></div><a href="#" class="btn-cont small" style="align-self:flex-start;margin-top:6px">Découvrir</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="new" style="padding:80px 0;margin:16px 12px 0">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:40px">
+    <div style="flex:1 1 300px">
+      <span class="newlabel" style="margin-bottom:10px">Nouveau</span>
+      <span class="sub-title">À ne pas manquer</span>
+      <h2 class="title">Agenda</h2>
+      <img class="vague" src="assets/vague-ocre.svg" alt="">
+      <a href="#" class="btn-cont">Tout l'agenda</a>
+    </div>
+    <ul style="flex:2 1 560px;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
+      <li style="display:flex;gap:20px;align-items:center;border:1px solid #ECECEC;border-radius:10px;padding:14px 20px;flex-wrap:wrap"><span style="width:110px;font-family:Livvic,sans-serif;font-weight:800;color:#5F3114;font-size:18px">5 déc. 2026</span><strong style="flex:1 1 240px;font-family:Livvic,sans-serif">Journée Mondiale des Sols</strong><span class="tag">Événement</span></li>
+      <li style="display:flex;gap:20px;align-items:center;border:1px solid #ECECEC;border-radius:10px;padding:14px 20px;flex-wrap:wrap"><span style="width:110px;font-family:Livvic,sans-serif;font-weight:800;color:#5F3114;font-size:18px">[date]</span><strong style="flex:1 1 240px;font-family:Livvic,sans-serif">Formation : description de sol sur le terrain</strong><span class="tag" style="background:#237D3D;color:#fff">Formation</span></li>
+      <li style="display:flex;gap:20px;align-items:center;border:1px solid #ECECEC;border-radius:10px;padding:14px 20px;flex-wrap:wrap"><span style="width:110px;font-family:Livvic,sans-serif;font-weight:800;color:#5F3114;font-size:18px">[date]</span><strong style="flex:1 1 240px;font-family:Livvic,sans-serif">Formation : animateur·rice pro de la Fresque du Sol</strong><span class="tag" style="background:#237D3D;color:#fff">Formation</span></li>
+      <li style="display:flex;gap:20px;align-items:center;border:1px solid #ECECEC;border-radius:10px;padding:14px 20px;flex-wrap:wrap"><span style="width:110px;font-family:Livvic,sans-serif;font-weight:800;color:#5F3114;font-size:18px">19-23 mai</span><strong style="flex:1 1 240px;font-family:Livvic,sans-serif">Fête de la Nature 2027 · appel à organisation</strong><span class="tag">Appel</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sols" style="position:relative;padding:80px 0;margin-top:16px">
+  <div style="position:absolute;inset:0;background:rgba(0,0,0,.45)"></div>
+  <div class="wrap" style="position:relative;color:#fff">
+    <h2 style="font-size:40px;font-weight:700;color:#fff">LES SOLS</h2>
+    <img class="vague" src="assets/vague-blanche.svg" alt="" style="margin-top:14px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;text-align:center;margin-bottom:40px">
+      <div><h3 style="font-size:50px;font-weight:500;color:#fff">20 000</h3><h4 style="font-size:22px;font-weight:700;color:#fff;line-height:1.5">mégatonnes de carbone peuvent être séquestrées par les sols en 25 ans à l'échelle mondiale</h4></div>
+      <div><h3 style="font-size:50px;font-weight:500;color:#fff">25 à 60%</h3><h4 style="font-size:22px;font-weight:700;color:#fff;line-height:1.5">de la biodiversité terrestre se trouve dans les sols</h4></div>
+      <div><h3 style="font-size:50px;font-weight:500;color:#fff">95 %</h3><h4 style="font-size:22px;font-weight:700;color:#fff;line-height:1.5">de l'alimentation provient du sol</h4></div>
+    </div>
+    <div style="text-align:center"><a href="#" class="btn-cont btn-white">Découvrir les sols</a></div>
+  </div>
+</section>
+
+<section style="padding:90px 0">
+  <div class="wrap">
+    <span class="sub-title">Quoi de neuf ?</span>
+    <h2 class="title">Actualités</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-bottom:40px">
+      <a href="#" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:12px"><img src="assets/actu-jes.jpg" alt="" style="width:100%;aspect-ratio:450/378;object-fit:cover;border-radius:5px"><h3 style="font-size:20px;color:#5F3114;font-weight:800">JES 2027 – Appel à participation pour le tournoi étudiant</h3></a>
+      <a href="#" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:12px"><img src="assets/actu-territoires.png" alt="" style="width:100%;aspect-ratio:450/378;object-fit:cover;border-radius:5px"><h3 style="font-size:20px;color:#5F3114;font-weight:800">Quand les sols deviennent un véritable outil d'aide à la décision des territoires</h3></a>
+      <a href="#" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:12px"><img src="assets/actu-fdln.jpg" alt="" style="width:100%;aspect-ratio:450/378;object-fit:cover;border-radius:5px"><h3 style="font-size:20px;color:#5F3114;font-weight:800">Appel à organisation Fête de la Nature – 19 au 23 mai 2027 – 21e édition</h3></a>
+    </div>
+    <div style="text-align:center"><a href="#" class="btn-cont">Voir toutes les actualités</a></div>
+  </div>
+</section>
+
+<section style="padding:20px 0 90px">
+  <div class="wrap"><div style="background:#F7F7F7;border-radius:10px;padding:50px">
+    <span class="sub-title">Soutenir l'AFES !</span>
+    <h2 class="title">Adhérer ou faire un don</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <p style="max-width:760px">Parce que l'AFES est une association, et ne peut agir que grâce au soutien de ses membres. Si vous appréciez ce que nous faisons, n'hésitez pas à faire un don ou à rejoindre le réseau de nos adhérent·es.</p>
+    <div style="display:flex;gap:6px;margin-top:20px;flex-wrap:wrap"><a href="#" class="btn-fill">J'adhère</a><a href="#" class="btn-fill">Je fais un don</a></div>
+  </div></div>
+</section>
+
+<footer class="foot">
+  <div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;padding-top:60px;padding-bottom:40px">
+    <div><img src="assets/logo-afes-blanc.png" alt="AFES" style="width:176px"></div>
+    <div><h3>Menu</h3><ul><li><a href="#">L'AFES</a></li><li><a href="#">Les sols</a></li><li><a href="#">Nos missions</a></li><li><a href="#">Se former</a></li><li><a href="#">Projets</a></li><li><a href="#">Actualités</a></li></ul></div>
+    <div><h3>Informations</h3><ul><li><a href="#">Contact</a></li><li><a href="#">Mentions légales</a></li><li><a href="#">Kit de communication</a></li></ul></div>
+    <div><h3>Espace adhérents</h3><p style="margin-bottom:16px">Accéder à du contenu "Premium" pour les adhérents de l'AFES</p><a href="#" class="btn-cont" style="color:#BFC0C1">Connexion</a></div>
+  </div>
+  <div class="wrap" style="padding-bottom:24px;font-size:14px">© 2023 AFES - Tous droits réservés</div>
+</footer>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":5300}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { profile: 'pro' }; }
+  renderVals() {
+    const show = this.props.showNew ?? true;
+    const data = {
+      etu: { label: 'Étudiant·e', routes: [
+        { kind: 'Orientation', title: 'Trouver une formation en sciences du sol', text: 'Carte des licences et masters.' },
+        { kind: 'Soutien', title: 'Bourses Demolon', text: 'Soutenir les jeunes chercheur·ses.' },
+        { kind: 'Concours', title: 'Tournoi étudiant JES 2027', text: 'Appel à participation.' },
+        { kind: 'Emploi', title: 'Espace emploi', text: 'Métiers et offres.' } ] },
+      pro: { label: 'Professionnel·le', routes: [
+        { kind: 'Formation', title: 'Formations continues', text: 'Terrain, Fresque du Sol, sols forestiers.' },
+        { kind: 'Reconnaissance', title: 'Reconnaissance des compétences en pédologie', text: 'Faire valoir son expertise.' },
+        { kind: 'Outil', title: 'Référentiel pédologique', text: 'La référence pour nommer les sols.' },
+        { kind: 'Réseau', title: 'Réseau e-Sol', text: 'Échanger entre pairs.' } ] },
+      ens: { label: 'Enseignant·e ou formateur·rice', routes: [
+        { kind: 'Réseau', title: 'Réseau des enseignants et formateurs', text: 'PromoSolsEduc.' },
+        { kind: 'Ressources', title: 'Centre de ressources', text: 'Supports et recommandations.' },
+        { kind: 'Formation', title: 'Devenir animateur·rice de la Fresque du Sol', text: 'Un atelier de 3 h.' },
+        { kind: 'Terrain', title: 'PromoSolsTerrain', text: 'Se former à la description de sol.' } ] },
+      orga: { label: 'Collectivité ou entreprise', routes: [
+        { kind: 'Formation', title: 'Former vos équipes', text: 'Formation sur mesure, sur devis.' },
+        { kind: 'Sensibilisation', title: 'Une Fresque du Sol chez vous', text: 'Atelier collaboratif de 3 h.' },
+        { kind: 'Cadre', title: 'Législation', text: 'Ce que dit le droit des sols.' },
+        { kind: 'Partenariat', title: 'Soutenez-nous', text: 'Devenir partenaire de l’AFES.' } ] },
+      cur: { label: 'Curieux·se', routes: [
+        { kind: 'Comprendre', title: 'Définition et enjeux', text: 'L’essentiel sur les sols.' },
+        { kind: 'Événement', title: 'Journée Mondiale des Sols', text: 'Le 5 décembre, partout en France.' },
+        { kind: 'Participer', title: 'Sciences participatives sur les sols', text: 'Contribuer à la recherche.' },
+        { kind: 'Regarder', title: 'Webinaires', text: 'Conférences en ligne.' } ] }
+    };
+    const cur = this.state.profile;
+    const profiles = Object.keys(data).map((id) => ({
+      label: data[id].label,
+      cls: id === cur ? 'on' : '',
+      pressed: id === cur ? 'true' : 'false',
+      pick: () => this.setState({ profile: id })
+    }));
+    return { rootClass: show ? 'root show-new' : 'root', profiles, routes: data[cur].routes };
+  }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

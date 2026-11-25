@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Menu M2 · Méga-menu · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.6}
+.root h1,.root h2,.root h3{font-family:Livvic,sans-serif;margin:0;line-height:1.15}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.topbar{background:#5F3114;color:#fff;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-family:Livvic,sans-serif;font-weight:600}
+.navbtn{font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;color:#000;background:none;border:0;min-height:44px;padding:0;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.navbtn:hover,.navbtn.on{color:#BF6525}
+.icon-btn{width:44px;height:44px;border:1px solid #DDDDDD;border-radius:5px;background:#fff;color:#818284;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.btn-fill{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:5px;background:#BF6525;border:1px solid #BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-fill:hover{background:#5F3114;border-color:#5F3114;color:#fff}
+.btn-cont{display:inline-flex;align-items:center;min-height:36px;padding:0 16px;border-radius:5px;border:1px solid #BF6525;color:#BF6525;font-family:Livvic,sans-serif;font-weight:600;font-size:14px;text-transform:uppercase;text-decoration:none}
+.btn-cont:hover{background:#BF6525;color:#fff}
+.mm{background:#fff;box-shadow:0 14px 34px rgba(0,0,0,.16);border-top:3px solid #BF6525}
+.mm ul{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column}
+.mm li a{display:block;padding:5px 0;font-family:Livvic,sans-serif;font-weight:500;font-size:16px;color:#000;text-decoration:none}
+.mm li a:hover{color:#BF6525}
+.mm h3{font-family:Livvic,sans-serif;font-weight:800;font-size:18px;color:#237D3D}
+.hero{background:#3a2a1a url(assets/bg-header.jpg) center/cover}
+.newlabel{display:none}
+.show-new .new{outline:2px dashed #5EB26C;outline-offset:4px;border-radius:6px}
+.show-new .newlabel{display:inline-flex;align-items:center;background:#237D3D;color:#fff;font-family:Livvic,sans-serif;font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:1px 8px;border-radius:999px;line-height:1.6}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="{{rootClass}}" style="width:1280px;height:640px;overflow:hidden;position:relative">
+<div class="mq">Maquette de travail GT Com · Menu, piste M2 : méga-menu (cliquez sur les rubriques)</div>
+<div class="topbar"><div style="max-width:1170px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:44px;padding:0 15px">
+  <span style="display:flex;align-items:center;gap:12px"><img src="assets/iuss-blanc.png" alt="IUSS" style="height:28px"> L'AFES est la branche française de l'Union Internationale de Science du Sol (IUSS, International Union of Soil Science)</span>
+  <a href="#" style="display:flex;align-items:center;gap:6px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="8" r="5"></circle><path d="M3 22c1-5 4.5-8 9-8s8 3 9 8z"></path></svg>CONNEXION</a>
+</div></div>
+<header style="background:#fff;position:relative;z-index:3;box-shadow:0 2px 10px rgba(0,0,0,.06)">
+  <div style="max-width:1170px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:104px;padding:0 15px">
+    <a href="#" aria-label="AFES, accueil"><img src="assets/logo-afes.svg" alt="AFES" style="height:84px;display:block"></a>
+    <nav aria-label="Menu principal" style="display:flex;gap:28px">
+      <sc-for list="{{sections}}" as="s" hint-placeholder-count="6">
+        <button class="navbtn {{s.cls}}" aria-expanded="{{s.expanded}}" onClick="{{s.pick}}">{{s.label}}<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+      </sc-for>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button class="icon-btn" aria-label="Rechercher une ressource"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></button>
+      <a href="#" class="btn-fill">Adhérer</a>
+    </div>
+  </div>
+  <div class="mm new" style="position:absolute;left:0;right:0;top:104px">
+    <div style="max-width:1170px;margin:0 auto;padding:28px 15px 30px;display:flex;gap:40px">
+      <div style="flex:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px">
+        <sc-for list="{{current.cols}}" as="c" hint-placeholder-count="3">
+          <div>
+            <h3>{{c.title}}</h3>
+            <img src="assets/vague-verte.svg" alt="" style="width:80px;height:6px;display:block;margin-top:6px">
+            <ul>
+              <sc-for list="{{c.links}}" as="l" hint-placeholder-count="4"><li><a href="#">{{l}}</a></li></sc-for>
+            </ul>
+          </div>
+        </sc-for>
+      </div>
+      <div style="width:290px;flex-shrink:0;border:1px solid #ECECEC;border-radius:10px;overflow:hidden;display:flex;flex-direction:column">
+        <img src="{{current.img}}" alt="" style="width:100%;height:120px;object-fit:cover;display:block">
+        <div style="padding:16px;display:flex;flex-direction:column;gap:6px">
+          <span style="font-family:Livvic,sans-serif;font-weight:800;font-size:14px;color:#237D3D">{{current.fEyebrow}}</span>
+          <h3 style="font-size:18px;color:#5F3114;font-weight:800">{{current.fTitle}}</h3>
+          <p style="font-size:14px">{{current.fText}}</p>
+          <div style="margin-top:6px"><a href="#" class="btn-cont">{{current.fCta}}</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="hero" style="height:470px"></div>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"ouvert":{"editor":"enum","options":["projets","former","afes","sols","missions","actus"],"default":"projets","section":"Maquette"},"$preview":{"width":1280,"height":640}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { open: props.ouvert ?? 'projets' }; }
+  renderVals() {
+    const show = this.props.showNew ?? true;
+    const data = [
+      { id: 'afes', label: "L'AFES", img: 'assets/missions.jpg',
+        cols: [
+          { title: "L'association", links: ['Présentation', 'Représentation', 'Listes de diffusion'] },
+          { title: 'Nous soutenir', links: ['Adhérer', 'Soutenez-nous', 'Boutique'] },
+          { title: 'Espace adhérents', links: ['Connexion', 'Contenus « Premium »'] }
+        ],
+        fEyebrow: 'Soutenir l’AFES !', fTitle: 'Adhérer ou faire un don', fText: 'L’AFES ne peut agir que grâce au soutien de ses membres.', fCta: 'J’adhère' },
+      { id: 'sols', label: 'Les sols', img: 'assets/bg-sols.jpg',
+        cols: [
+          { title: 'Comprendre', links: ['Définition et enjeux', 'Les grands noms des sciences du sol', 'Législation'] },
+          { title: 'Décrire et nommer', links: ['Référentiel pédologique', 'Centre de ressources'] },
+          { title: 'Métiers', links: ['Espace emploi', 'Formations initiales (carte)'] }
+        ],
+        fEyebrow: 'Découvrir', fTitle: 'Définition et enjeux', fText: 'Les sols, épiderme de la Terre, ressource non renouvelable à l’échelle humaine.', fCta: 'Lire' },
+      { id: 'missions', label: 'Nos missions', img: 'assets/p-fresque2.jpg',
+        cols: [
+          { title: 'Valoriser', links: ['Centre de ressources', 'Réseau e-Sol', 'Recommandations des ressources', 'Etude et Gestion des Sols', 'Commissions thématiques'] },
+          { title: 'Reconnaître et fédérer', links: ['Reconnaissance des compétences', 'Référents sols forestiers', 'Réseau des enseignants', 'Sciences participatives', 'PromoSolsTerrain', 'Bourses Demolon'] },
+          { title: 'Animer', links: ['Journée Mondiale des Sols', 'Journées d’Etude des Sols', 'Webinaires', 'La Fresque du Sol'] }
+        ],
+        fEyebrow: 'Que faisons-nous ?', fTitle: 'Nos trois missions', fText: 'Valoriser, reconnaître et fédérer, animer.', fCta: 'Découvrir' },
+      { id: 'former', label: 'Se former', img: 'assets/f-promosols.png',
+        cols: [
+          { title: 'Formations continues', links: ['Décrire un sol sur le terrain', 'Animateur·rice pro de la Fresque du Sol', 'Référent·e qualité des sols forestiers', 'Zones humides et SolRedOx (bientôt)'] },
+          { title: 'Pour les structures', links: ['Formation sur mesure', 'Fresque du Sol pour vos équipes', 'Nous contacter'] },
+          { title: 'Formations initiales', links: ['Carte des licences et masters', 'Bourses Demolon'] }
+        ],
+        fEyebrow: 'Prochaine session', fTitle: 'PromoSolsTerrain', fText: '4 h à distance + 2 jours de terrain, 4 fosses par session · [date] · [lieu]', fCta: 'S’inscrire' },
+      { id: 'projets', label: 'Projets', img: 'assets/p-jms.png',
+        cols: [
+          { title: 'Temps forts', links: ['Journée Mondiale des Sols 2026', 'Journées d’Etude des Sols', 'Festival européen Sols & Arts', 'Webinaires'] },
+          { title: 'Projets en cours', links: ['SOILSCAPE (Horizon Europe)', 'La Fresque du Sol', 'Réseau e-Sol', 'PromoSolsTerrain'] },
+          { title: 'Soutiens et réseaux', links: ['Bourses Demolon', 'Référents sols forestiers', 'Sciences participatives', 'Tous les projets →'] }
+        ],
+        fEyebrow: '5 décembre 2026', fTitle: 'Journée Mondiale des Sols 2026', fText: 'Organisez ou rejoignez un événement près de chez vous.', fCta: 'Participer' },
+      { id: 'actus', label: 'Quoi de neuf ?', img: 'assets/actu-jes.jpg',
+        cols: [
+          { title: 'Suivre', links: ['Actualités', 'Agenda', 'Listes de diffusion'] },
+          { title: 'Appels en cours', links: ['JES 2027 : tournoi étudiant', 'Fête de la Nature 2027'] },
+          { title: 'Nous suivre', links: ['LinkedIn', 'Instagram', 'YouTube', 'Facebook'] }
+        ],
+        fEyebrow: '22 octobre 2026', fTitle: 'JES 2027 – Appel à participation pour le tournoi étudiant', fText: '', fCta: 'Lire' }
+    ];
+    const open = this.state.open;
+    const sections = data.map((s) => ({
+      label: s.label,
+      cls: s.id === open ? 'on' : '',
+      expanded: s.id === open ? 'true' : 'false',
+      pick: () => this.setState({ open: s.id })
+    }));
+    const current = data.find((s) => s.id === open) || data[4];
+    return { rootClass: show ? 'root show-new' : 'root', sections, current };
+  }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

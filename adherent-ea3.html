@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Espace adhérent · option 3 : s'impliquer · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.65}
+.wrap{max-width:1170px;margin:0 auto;padding:0 15px;box-sizing:border-box}
+.root h1,.root h2,.root h3{font-family:Livvic,sans-serif;margin:0;line-height:1.2}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.topbar{background:#5F3114;color:#fff;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-family:Livvic,sans-serif;font-weight:600}
+.top{font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;color:#000;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.btn-fill{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;background:#BF6525;border:1px solid #BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-fill:hover{background:#5F3114;border-color:#5F3114;color:#fff}
+.btn-cont{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 14px;border-radius:5px;border:1px solid #BF6525;color:#BF6525;background:transparent;font-family:Livvic,sans-serif;font-weight:600;font-size:14px;text-decoration:none;box-sizing:border-box}
+.btn-cont:hover{background:#BF6525;color:#fff}
+.btn-white{border-color:#fff;color:#fff}.btn-white:hover{background:#fff;color:#5F3114}
+.sub-title{font-family:Livvic,sans-serif;font-weight:800;font-size:22px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:34px;color:#5F3114;margin:4px 0 14px}
+.vague{display:block;width:160px;height:10px;margin-bottom:22px}
+.hero{background:#3a2a1a url(assets/missions.jpg) center/cover}
+.col{background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.col h3{color:#5F3114;font-size:24px;font-weight:800}
+.col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.col li{display:flex;justify-content:space-between;gap:10px;align-items:center;border-bottom:1px solid #ECECEC;padding:10px 0}
+.col li a{font-family:Livvic,sans-serif;font-weight:600;color:#000;text-decoration:none}
+.col li a:hover{color:#BF6525}
+.gt{border:1px solid #ECECEC;border-radius:10px;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;background:#fff}
+.chip{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:5px;border:1px solid #ECECEC;background:#fff;color:#5F3114;font-family:Livvic,sans-serif;font-weight:600;font-size:14px;text-decoration:none}
+.chip.on{background:#BF6525;border-color:#BF6525;color:#fff}
+.doc{display:flex;gap:16px;align-items:center;border-bottom:1px solid #ECECEC;padding:12px 0;flex-wrap:wrap}
+.tag{display:inline-flex;align-items:center;padding:1px 10px;border-radius:4px;background:#EBE6E0;color:#5F3114;font-size:13px;font-weight:600}
+.foot{background:#000 url(assets/bg-footer.jpg) center/cover;color:#BFC0C1}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="root">
+<div class="mq">Maquette de travail GT Com · Espace adhérent, option 3 : « s'impliquer » (informer, faire participer, relier à e-Sol)</div>
+<div class="topbar"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;flex-wrap:wrap">
+  <span style="display:flex;align-items:center;gap:12px"><img src="assets/iuss-blanc.png" alt="IUSS" style="height:28px"> L'AFES est la branche française de l'Union Internationale de Science du Sol (IUSS, International Union of Soil Science)</span>
+  <span style="display:flex;gap:16px;align-items:center"><span>Bonjour [Prénom]</span><a href="#">MON ESPACE</a><a href="#" style="font-weight:500">Déconnexion</a></span>
+</div></div>
+<header style="background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:104px;flex-wrap:wrap">
+    <img src="assets/logo-afes.svg" alt="AFES" style="height:84px">
+    <nav aria-label="Menu principal" style="display:flex;gap:30px;flex-wrap:wrap"><a href="#" class="top">L'AFES</a><a href="#" class="top">Les sols</a><a href="#" class="top">Nos missions</a><a href="#" class="top">Se former</a><a href="#" class="top">Projets</a><a href="#" class="top">Quoi de neuf ?</a></nav>
+    <a href="#" class="btn-fill">Adhérer</a>
+  </div>
+</header>
+
+<section class="hero" style="position:relative;padding:70px 0">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(47,24,10,.85),rgba(47,24,10,.4))"></div>
+  <div class="wrap" style="position:relative;display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between">
+    <div style="flex:1 1 520px;color:#fff;display:flex;flex-direction:column;gap:10px">
+      <span class="sub-title" style="color:#5EB26C">Bienvenue dans le réseau, [Prénom]</span>
+      <h1 style="font-size:46px;font-weight:800;color:#fff">L'AFES, c'est aussi vous</h1>
+      <p style="font-size:18px">S'informer de la vie de l'association, participer à ses temps forts, rejoindre un groupe de travail.</p>
+    </div>
+    <div style="flex:0 1 320px;background:#fff;border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:8px">
+      <span style="font-family:Livvic,sans-serif;font-weight:800;color:#237D3D">Adhésion 2026 · jusqu'au 30/11/2026</span>
+      <span style="font-size:14px">Les adhésions 2027 ouvrent le 1er décembre.</span>
+      <a href="#" class="btn-fill" style="align-self:flex-start">Renouveler</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:70px 0">
+  <div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:26px">
+    <div class="col">
+      <span class="sub-title" style="font-size:18px">1</span>
+      <h3>M'informer</h3>
+      <ul>
+        <li><a href="#">La Lettre de l'Association</a><span class="tag">Trimestrielle</span></li>
+        <li><a href="#">Comptes rendus du CA</a><span class="tag">22/09/2026</span></li>
+        <li><a href="#">Assemblée Générale 2026</a><span class="tag">AG</span></li>
+        <li><a href="#">Replays des Rendez-vous</a><span class="tag">7 vidéos</span></li>
+      </ul>
+    </div>
+    <div class="col">
+      <span class="sub-title" style="font-size:18px">2</span>
+      <h3>Participer</h3>
+      <ul>
+        <li><a href="#">Rendez-vous de l'AFES #08</a><span class="tag">[date]</span></li>
+        <li><a href="#">Journée Mondiale des Sols</a><span class="tag">5 déc.</span></li>
+        <li><a href="#">Journées d'Etude des Sols 2027</a><span class="tag">2-5 juil.</span></li>
+        <li><a href="#">Formations à tarif adhérent</a><span class="tag">[réduction]</span></li>
+      </ul>
+    </div>
+    <div class="col">
+      <span class="sub-title" style="font-size:18px">3</span>
+      <h3>M'engager</h3>
+      <ul>
+        <li><a href="#">Rejoindre un groupe de travail</a><span class="tag">Bénévolat</span></li>
+        <li><a href="#">Devenir ambassadeur·rice</a><span class="tag">[à définir]</span></li>
+        <li><a href="#">Proposer un projet ou un article</a><span class="tag">Formulaire</span></li>
+        <li><a href="#">Parrainer un·e nouvel·le adhérent·e</a><span class="tag">[à définir]</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding:70px 0;background:#F7F7F7">
+  <div class="wrap">
+    <span class="sub-title">Bénévolat</span>
+    <h2 class="title">Les groupes de travail recrutent</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div class="gt"><div><strong style="font-family:Livvic,sans-serif;font-size:19px;color:#5F3114">GT Communication &amp; Jeunes</strong><p style="font-size:14px">Réseaux sociaux, site, vidéos, relance des jeunes · réunion mensuelle en visio</p></div><div style="display:flex;gap:8px"><a href="#" class="btn-cont">Rejoindre</a><a href="#" class="btn-cont" style="background:#5F3114;border-color:#5F3114;color:#fff">Son espace e-Sol ↗</a></div></div>
+      <div class="gt"><div><strong style="font-family:Livvic,sans-serif;font-size:19px;color:#5F3114">GT Financements</strong><p style="font-size:14px">Diversifier les ressources de l'association</p></div><div style="display:flex;gap:8px"><a href="#" class="btn-cont">Rejoindre</a><a href="#" class="btn-cont" style="background:#5F3114;border-color:#5F3114;color:#fff">Son espace e-Sol ↗</a></div></div>
+      <div class="gt"><div><strong style="font-family:Livvic,sans-serif;font-size:19px;color:#5F3114">[Autres groupes de travail]</strong><p style="font-size:14px">[Description]</p></div><a href="#" class="btn-cont">Rejoindre</a></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:70px 0">
+  <div class="wrap">
+    <span class="sub-title">Contenus réservés</span>
+    <h2 class="title">La bibliothèque des adhérent·es</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px"><a href="#" class="chip on">Tout</a><a href="#" class="chip">Comptes rendus</a><a href="#" class="chip">Replays</a><a href="#" class="chip">Présentations</a><a href="#" class="chip">Lettres</a></div>
+    <div class="doc"><span class="tag">CR du CA</span><strong style="flex:1 1 320px">Compte rendu du Conseil d'Administration du 22/09/2026</strong><span style="font-size:14px;color:#818284">13 oct. 2026</span></div>
+    <div class="doc"><span class="tag">Replay</span><strong style="flex:1 1 320px">Rendez-vous #07 : Festival européen Sols &amp; Arts, centre de ressources</strong><span style="font-size:14px;color:#818284">22 avr. 2026</span></div>
+    <div class="doc"><span class="tag">Présentation</span><strong style="flex:1 1 320px">Rendez-vous #06 : Reconnaissance des compétences &amp; DEMOLON</strong><span style="font-size:14px;color:#818284">10 déc. 2025</span></div>
+    <div class="doc"><span class="tag">CR du CA</span><strong style="flex:1 1 320px">Compte rendu du Conseil d'Administration du 26/05/2026</strong><span style="font-size:14px;color:#818284">13 juin 2026</span></div>
+  </div>
+</section>
+
+<section style="padding:0 0 70px">
+  <div class="wrap"><div style="background:#5F3114;color:#fff;border-radius:10px;padding:34px 40px;display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between">
+    <div style="flex:1 1 560px"><span class="sub-title" style="color:#5EB26C">Et pour échanger au quotidien</span><p style="font-size:17px;margin-top:8px">Les discussions, les groupes de travail et les communautés de projets (Fresque du Sol…) vivent sur la plateforme <strong>e-Sol</strong>. Votre espace adhérent y donne accès en un clic.</p></div>
+    <a href="#" class="btn-cont btn-white" style="min-height:42px;font-size:16px">Aller sur e-Sol ↗</a>
+  </div></div>
+</section>
+<footer class="foot"><div class="wrap" style="padding:40px 15px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px"><img src="assets/logo-afes-blanc.png" alt="AFES" style="width:176px"><span style="font-size:14px">© 2023 AFES - Tous droits réservés</span></div></footer>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2500}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

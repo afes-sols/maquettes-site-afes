@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Menu M3 · Barre d'accès rapide · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.6}
+.root h1,.root h2,.root h3{font-family:Livvic,sans-serif;margin:0;line-height:1.15}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.topbar{background:#5F3114;color:#fff;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-family:Livvic,sans-serif;font-weight:600}
+.top{font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;color:#000;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.top:hover{color:#BF6525}
+.search{display:flex;align-items:center;justify-content:space-between;border:1px solid #DDDDDD;border-radius:5px;height:44px;padding:0 12px;color:#818284;font-size:14px;width:230px;box-sizing:border-box}
+.btn-fill{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:5px;background:#BF6525;border:1px solid #BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-fill:hover{background:#5F3114;border-color:#5F3114;color:#fff}
+.quick{background:#EBE6E0}
+.quick a{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 6px;font-family:Livvic,sans-serif;font-weight:700;font-size:16px;color:#5F3114;text-decoration:none;border-bottom:3px solid transparent}
+.quick a:hover{color:#BF6525;border-bottom-color:#BF6525}
+.quick .ico{width:32px;height:32px;border-radius:50%;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:#237D3D}
+.hero{background:#3a2a1a url(assets/bg-header.jpg) center/cover}
+.newlabel{display:none}
+.show-new .new{outline:2px dashed #5EB26C;outline-offset:3px;border-radius:4px}
+.show-new .newlabel{display:inline-flex;align-items:center;background:#237D3D;color:#fff;font-family:Livvic,sans-serif;font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:1px 8px;border-radius:999px;line-height:1.6}
+.note{position:absolute;background:#FFF6D6;border:1px solid #E5C66A;color:#3E2716;font-size:14px;line-height:1.45;padding:10px 14px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="{{rootClass}}" style="width:1280px;height:640px;overflow:hidden;position:relative">
+<div class="mq">Maquette de travail GT Com · Menu, piste M3 : menu actuel inchangé + barre d'accès rapide</div>
+<div class="topbar"><div style="max-width:1170px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:44px;padding:0 15px">
+  <span style="display:flex;align-items:center;gap:12px"><img src="assets/iuss-blanc.png" alt="IUSS" style="height:28px"> L'AFES est la branche française de l'Union Internationale de Science du Sol (IUSS, International Union of Soil Science)</span>
+  <a href="#" style="display:flex;align-items:center;gap:6px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="8" r="5"></circle><path d="M3 22c1-5 4.5-8 9-8s8 3 9 8z"></path></svg>CONNEXION</a>
+</div></div>
+<header style="background:#fff;position:relative;z-index:3">
+  <div style="max-width:1170px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:104px;padding:0 15px">
+    <a href="#" aria-label="AFES, accueil"><img src="assets/logo-afes.svg" alt="AFES" style="height:84px;display:block"></a>
+    <nav aria-label="Menu principal" style="display:flex;gap:44px">
+      <a href="#" class="top">L'AFES</a><a href="#" class="top">Les sols</a><a href="#" class="top">Nos missions</a><a href="#" class="top">Quoi de neuf ?</a>
+    </nav>
+    <div style="display:flex;gap:14px;align-items:center">
+      <div class="search">Rechercher une ressource… <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></div>
+      <a href="#" class="btn-fill">Adhérer</a>
+    </div>
+  </div>
+  <nav class="quick new" aria-label="Accès rapide">
+    <div style="max-width:1170px;margin:0 auto;padding:0 15px;display:flex;align-items:center;justify-content:space-between;gap:10px">
+      <span class="newlabel">Nouveau</span>
+      <a href="#"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c3 2 9 2 12 0v-5"></path></svg></span>Se former</a>
+      <a href="#"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6-5.3-3-5.3 3 1.2-6L3.4 9.3l6-.7z"></path></svg></span>Nos projets</a>
+      <a href="#"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></span>Agenda</a>
+      <a href="#"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6a2 2 0 012 2v14a2 2 0 00-2-2H4zM20 4h-6a2 2 0 00-2 2v14a2 2 0 012-2h6z"></path></svg></span>Centre de ressources</a>
+      <a href="#"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg></span>Espace emploi</a>
+      <a href="#" style="color:#BF6525"><span class="ico" style="color:#BF6525"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 6-8 11-8 11z"></path></svg></span>Faire un don</a>
+    </div>
+  </nav>
+</header>
+<div class="hero" style="height:420px;position:relative">
+  <div style="position:absolute;inset:0;background:rgba(0,0,0,.25)"></div>
+  <div style="position:absolute;left:70px;top:110px;display:flex;flex-direction:column;gap:14px;max-width:520px">
+    <div style="display:inline-flex;align-items:center;gap:14px;background:#EBE6E0;border-radius:40px;padding:5px 22px 5px 5px;align-self:flex-start"><span style="background:#237D3D;color:#fff;border-radius:30px;padding:4px 18px;font-family:Livvic,sans-serif;font-weight:500">AFES</span><span style="color:#BF6525;font-family:Livvic,sans-serif;font-weight:500">Au service des sols depuis 1934</span></div>
+    <h1 style="color:#fff;font-size:52px;font-weight:800">AFES<br>Association Française pour l'Étude du Sol</h1>
+  </div>
+  <p class="note" style="left:900px;top:90px;width:320px">Le menu actuel ne bouge pas. On ajoute une <strong>barre d'accès rapide</strong> (fond gris chaud de la charte) vers les 6 destinations les plus utiles. Elle reste sur toutes les pages. Le plus simple à mettre en place, mais une ligne de plus en haut de l'écran.</p>
+</div>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":640}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const show = this.props.showNew ?? true;
+    return { rootClass: show ? 'root show-new' : 'root' };
+  }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

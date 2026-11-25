@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Maquettes d'évolution du site de l'AFES · GT Communication</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.6}
+a{color:#BF6525}
+.wrap{max-width:1170px;margin:0 auto;padding:0 20px;box-sizing:border-box}
+h1,h2,h3{font-family:Livvic,sans-serif;margin:0;line-height:1.2}
+p{margin:0}
+.topbar{background:#5F3114;color:#fff;font-size:14px;padding:10px 0}
+.hero{position:relative;background:#3a2a1a url(assets/bg-header.jpg) center/cover;padding:70px 0}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(47,24,10,.72)}
+.hero .wrap{position:relative;color:#fff;display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+.sub{font-family:Livvic,sans-serif;font-weight:800;font-size:20px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:32px;color:#5F3114;text-transform:uppercase;margin:4px 0 12px}
+.vague{display:block;width:160px;height:10px;margin-bottom:22px}
+section{padding:60px 0;border-bottom:1px solid #ECECEC}
+section:nth-of-type(even){background:#F7F7F7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card.ref{background:#FBFAF8;border-style:dashed}
+.card h3{color:#5F3114;font-size:20px;font-weight:800}
+.card .k{font-family:Livvic,sans-serif;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#237D3D}
+.card.ref .k{color:#818284}
+.card p{font-size:15px}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.btn{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:5px;background:#BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:15px;text-decoration:none}
+.btn:hover{background:#5F3114}
+.btn.o{background:transparent;border:1px solid #BF6525;color:#BF6525}
+.btn.o:hover{background:#BF6525;color:#fff}
+.howto{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.howto div{background:#fff;border-radius:10px;padding:18px;color:#000}
+.howto b{font-family:Livvic,sans-serif;color:#5F3114;display:block;margin-bottom:4px}
+.new{outline:2px dashed #5EB26C;outline-offset:3px;border-radius:4px;padding:0 4px}
+footer{background:#000 url(assets/bg-footer.jpg) center/cover;color:#BFC0C1;padding:36px 0;font-size:14px}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap">Document de travail du GT Communication de l'AFES · novembre 2026 · ces pages sont des maquettes, pas le site officiel</div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <img src="assets/logo-afes-blanc.svg" alt="AFES" style="width:110px">
+    <div style="flex:1 1 520px;display:flex;flex-direction:column;gap:10px">
+      <span class="sub" style="color:#5EB26C">GT Communication · maquettes à commenter</span>
+      <h1 style="font-size:44px;font-weight:800;color:#fff">Faire évoluer le site de l'AFES</h1>
+      <p style="font-size:18px">Pas une refonte : le site actuel, avec des évolutions pour mieux montrer les formations et les projets, mieux orienter les visiteurs et faire circuler entre les pages. Pour chaque sujet, plusieurs options à comparer.</p>
+    </div>
+  </div>
+</header>
+
+<section style="background:#5F3114;border:0">
+  <div class="wrap">
+    <h2 style="color:#fff;font-size:22px;margin-bottom:16px">Comment lire ces maquettes</h2>
+    <div class="howto">
+      <div><b>Tout part du site actuel</b>Logo, photos, couleurs, polices et textes sont ceux d'afes.fr.</div>
+      <div><b>Les nouveautés sont entourées</b>En <span class="new">pointillés verts</span>, avec une étiquette « Nouveau ». Le bouton en bas à gauche de chaque maquette les masque, pour voir le rendu final.</div>
+      <div><b>C'est cliquable</b>Menus, filtres, profils « Je suis… », onglets de l'espace adhérent, bandeau flottant : essayez !</div>
+      <div><b>[Entre crochets]</b>Les informations à fournir (dates, lieux, tarifs…). Rien n'a été inventé.</div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <span class="sub">1 · Menu haut</span>
+    <h2 class="title">Trois pistes à partir du menu actuel</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="grid">
+      <article class="card ref"><span class="k">Référence</span><h3>Le menu actuel</h3><p>4 rubriques. Les formations sont dans « Les sols › Se former » ; les projets (JMS, Fresque du Sol, SOILSCAPE…) sont au 3e niveau, sous « Nos missions › Animer ».</p><div class="links"><a class="btn o" href="menu-actuel.html">Voir</a></div></article>
+      <article class="card"><span class="k">Piste M1</span><h3>Deux rubriques en plus</h3><p>« Se former » et « Projets » passent au premier niveau, avec leur menu déroulant. La recherche devient une icône. Un simple réglage du menu WordPress.</p><div class="links"><a class="btn" href="menu-m1.html">Menu « Projets »</a><a class="btn" href="menu-m1.html?ouvert=former">Menu « Se former »</a></div></article>
+      <article class="card"><span class="k">Piste M2</span><h3>Méga-menu</h3><p>Mêmes 6 rubriques, mais chaque rubrique ouvre un grand panneau avec toutes ses pages et un encart mis en avant. Cliquez sur les rubriques.</p><div class="links"><a class="btn" href="menu-m2.html">Panneau « Projets »</a><a class="btn" href="menu-m2.html?ouvert=former">Panneau « Se former »</a></div></article>
+      <article class="card"><span class="k">Piste M3</span><h3>Barre d'accès rapide</h3><p>Le menu actuel ne change pas ; une barre de 6 raccourcis s'ajoute dessous : Se former, Nos projets, Agenda, Centre de ressources, Espace emploi, Faire un don.</p><div class="links"><a class="btn" href="menu-m3.html">Voir</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="accueil">
+  <div class="wrap">
+    <span class="sub">2 · Page d'accueil</span>
+    <h2 class="title">Trois niveaux d'évolution</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="grid">
+      <article class="card"><span class="k">Option A · sobre</span><h3>La page actuelle + 2 blocs</h3><p>« Ce que vous propose l'AFES » (6 portes d'entrée) sous le bandeau, et « Nos formations » (4 cartes).</p><div class="links"><a class="btn" href="accueil-a.html">Voir</a></div></article>
+      <article class="card"><span class="k">Option B</span><h3>Formation en vitrine</h3><p>Bandeau tournant dont la première image pousse les formations, cartes formations, bloc « Une formation pour votre structure » avec demande de devis.</p><div class="links"><a class="btn" href="accueil-b.html">Voir</a></div></article>
+      <article class="card"><span class="k">Option C</span><h3>Orienter et montrer les projets</h3><p>« Je suis… » (cliquable) propose des liens selon le profil ; 6 projets avec image ; les missions affichent leurs projets ; agenda.</p><div class="links"><a class="btn" href="accueil-c.html">Voir</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="interieur">
+  <div class="wrap">
+    <span class="sub">3 · Pages intérieures</span>
+    <h2 class="title">Faire circuler le visiteur</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="grid">
+      <article class="card"><span class="k">Option D</span><h3>Menu latéral</h3><p>Sur la vraie page « La Fresque du Sol » : pages de la rubrique et sommaire à gauche, encart formation, lien vers la communauté e-Sol, suggestions « Pour aller plus loin » en bas.</p><div class="links"><a class="btn" href="interieur-d.html">Voir</a></div></article>
+      <article class="card"><span class="k">Option E</span><h3>Éléments flottants</h3><p>Sommaire qui reste en haut au défilement, bandeau formation en bas d'écran (fermable), bloc communauté e-Sol, suggestions par thème. Faites défiler pour voir l'effet.</p><div class="links"><a class="btn" href="interieur-e.html">Voir</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="formations">
+  <div class="wrap">
+    <span class="sub">4 · Espace Formations</span>
+    <h2 class="title">Une rubrique à part entière</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="grid">
+      <article class="card"><span class="k">Catalogue</span><h3>Toutes les formations</h3><p>Remplace la page « Se former » : filtres cliquables, format, durée, public, prochaine session, tarif ; offre pour les structures ; questions fréquentes.</p><div class="links"><a class="btn" href="formations-catalogue.html">Voir</a></div></article>
+      <article class="card"><span class="k">Fiche type</span><h3>Exemple : PromoSolsTerrain</h3><p>Une page par formation : programme, public, formateur·rices, et un encart d'inscription avec sessions et tarifs.</p><div class="links"><a class="btn" href="formation-fiche.html">Voir</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <div class="wrap">
+    <span class="sub">5 · Page Projets</span>
+    <h2 class="title">Sortir les projets du 3e niveau</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="grid">
+      <article class="card"><span class="k">Nouvelle page</span><h3>Nos projets</h3><p>Tous les projets réunis, filtrables par mission, avec un lien vers leur communauté e-Sol quand elle existe. Principe : le site présente, e-Sol fait vivre.</p><div class="links"><a class="btn" href="projets.html">Voir</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="adherent">
+  <div class="wrap">
+    <span class="sub">6 · Espace adhérent</span>
+    <h2 class="title">De la page Connexion à un vrai espace membre</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="grid">
+      <article class="card ref"><span class="k">Référence</span><h3>L'espace actuel</h3><p>Une fois connecté·e, on reste sur la page « Connexion ». Les 3 problèmes relevés y sont signalés par des pastilles rouges.</p><div class="links"><a class="btn o" href="adherent-actuel.html">Voir</a></div></article>
+      <article class="card"><span class="k">Option EA1</span><h3>Page d'accueil adhérent</h3><p>Statut d'adhésion et renouvellement 2027, 6 tuiles d'accès, dernières publications réservées.</p><div class="links"><a class="btn" href="adherent-ea1.html">Voir</a></div></article>
+      <article class="card"><span class="k">Option EA2</span><h3>Tableau de bord</h3><p>Un espace membre avec menu latéral cliquable : accueil, mon adhésion, replays des Rendez-vous…</p><div class="links"><a class="btn" href="adherent-ea2.html">Voir</a></div></article>
+      <article class="card"><span class="k">Option EA3</span><h3>S'impliquer</h3><p>S'informer, participer, s'engager : groupes de travail qui recrutent, bibliothèque des contenus réservés, pont vers e-Sol.</p><div class="links"><a class="btn" href="adherent-ea3.html">Voir</a></div></article>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center"><img src="assets/logo-afes-blanc.png" alt="AFES" style="width:150px"><span>Maquettes de travail du GT Communication · AFES · novembre 2026. Vos retours : au GT Communication.</span></div></footer>
+</body>
+</html>

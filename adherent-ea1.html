@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Espace adhérent · option 1 : page d'accueil adhérent · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.65}
+.wrap{max-width:1170px;margin:0 auto;padding:0 15px;box-sizing:border-box}
+.root h1,.root h2,.root h3{font-family:Livvic,sans-serif;margin:0;line-height:1.2}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.topbar{background:#5F3114;color:#fff;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-family:Livvic,sans-serif;font-weight:600}
+.top{font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;color:#000;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.top:hover{color:#BF6525}
+.icon-btn{width:44px;height:44px;border:1px solid #DDDDDD;border-radius:5px;background:#fff;color:#818284;display:inline-flex;align-items:center;justify-content:center}
+.btn-fill{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;background:#BF6525;border:1px solid #BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-fill:hover{background:#5F3114;border-color:#5F3114;color:#fff}
+.btn-cont{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;border:1px solid #BF6525;color:#BF6525;background:transparent;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.btn-cont:hover{background:#BF6525;color:#fff}
+.btn-cont.small{min-height:34px;font-size:14px;padding:0 12px;text-transform:none}
+.btn-white{border-color:#fff;color:#fff}.btn-white:hover{background:#fff;color:#5F3114}
+.sub-title{font-family:Livvic,sans-serif;font-weight:800;font-size:22px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:34px;color:#5F3114;margin:4px 0 14px}
+.vague{display:block;width:160px;height:10px;margin-bottom:22px}
+.banner{background:#3a2a1a url(assets/bg-header.jpg) center/cover}
+.tile{background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:#000}
+.tile:hover{border-color:#BF6525}
+.tile h3{color:#5F3114;font-weight:800;font-size:21px}
+.tile .ic{width:46px;height:46px;border-radius:50%;background:#EBE6E0;color:#237D3D;display:flex;align-items:center;justify-content:center}
+.row{display:flex;gap:16px;align-items:center;border-bottom:1px solid #ECECEC;padding:14px 0;flex-wrap:wrap}
+.tag{display:inline-flex;align-items:center;padding:1px 10px;border-radius:4px;background:#EBE6E0;color:#5F3114;font-size:13px;font-weight:600}
+.foot{background:#000 url(assets/bg-footer.jpg) center/cover;color:#BFC0C1}
+.newlabel{display:none}
+.show-new .new{outline:2px dashed #5EB26C;outline-offset:6px;border-radius:8px}
+.show-new .newlabel{display:inline-flex;align-items:center;background:#237D3D;color:#fff;font-family:Livvic,sans-serif;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:2px 10px;border-radius:999px;line-height:1.6}
+</style>
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="{{rootClass}}">
+<div class="mq">Maquette de travail GT Com · Espace adhérent, option 1 : une vraie page d'accueil adhérent (faisable dans WordPress, sans extension lourde)</div>
+<div class="topbar"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;flex-wrap:wrap">
+  <span style="display:flex;align-items:center;gap:12px"><img src="assets/iuss-blanc.png" alt="IUSS" style="height:28px"> L'AFES est la branche française de l'Union Internationale de Science du Sol (IUSS, International Union of Soil Science)</span>
+  <span class="new" style="display:flex;gap:16px;align-items:center"><span>Bonjour [Prénom]</span><a href="#">MON ESPACE</a><a href="#" style="font-weight:500">Déconnexion</a></span>
+</div></div>
+<header style="background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:104px;flex-wrap:wrap">
+    <img src="assets/logo-afes.svg" alt="AFES" style="height:84px">
+    <nav aria-label="Menu principal" style="display:flex;gap:30px;flex-wrap:wrap"><a href="#" class="top">L'AFES</a><a href="#" class="top">Les sols</a><a href="#" class="top">Nos missions</a><a href="#" class="top">Se former</a><a href="#" class="top">Projets</a><a href="#" class="top">Quoi de neuf ?</a></nav>
+    <div style="display:flex;gap:10px;align-items:center"><span class="icon-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span><a href="#" class="btn-fill">Adhérer</a></div>
+  </div>
+</header>
+<section class="banner" style="position:relative;min-height:260px;display:flex;align-items:center;justify-content:center;text-align:center">
+  <div style="position:absolute;inset:0;background:rgba(0,0,0,.35)"></div>
+  <div style="position:relative"><h1 style="color:#fff;font-size:56px;font-weight:800">Mon espace adhérent</h1><p style="color:#fff;font-weight:700;font-size:15px">Accueil / Mon espace adhérent</p></div>
+</section>
+
+<section class="new" style="margin:-50px 12px 0;position:relative">
+  <div class="wrap"><div style="background:#fff;border-radius:10px;box-shadow:0 12px 34px rgba(0,0,0,.14);padding:28px 32px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+    <div style="flex:1 1 460px;display:flex;flex-direction:column;gap:6px">
+      <span class="newlabel" style="align-self:flex-start">Nouveau</span>
+      <span class="sub-title">Bonjour [Prénom] !</span>
+      <p style="font-size:18px">Votre adhésion <strong>2026</strong> est valable jusqu'au <strong>30 novembre 2026</strong>.</p>
+      <p style="font-size:15px;color:#5F3114">Les adhésions 2027 ouvrent le 1er décembre : renouvelez en deux minutes sur HelloAsso.</p>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap"><a href="#" class="btn-fill">Renouveler pour 2027</a><a href="#" class="btn-cont">Mon profil</a></div>
+  </div></div>
+</section>
+
+<section class="new" style="padding:70px 0;margin:16px 12px 0">
+  <div class="wrap">
+    <span class="sub-title">Vos accès réservés</span>
+    <h2 class="title">Ce que votre adhésion vous ouvre</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px">
+      <a href="#" class="tile"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M10 9l5 3-5 3z"></path></svg></span><h3>Les Rendez-vous de l'AFES</h3><p>Les replays des 7 Rendez-vous déjà tenus : JES, PromoSolsTerrain, SOILSCAPE, Festival Sols &amp; Arts…</p><span class="btn-cont small" style="align-self:flex-start">Revoir les enregistrements</span></a>
+      <a href="#" class="tile"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M9 12h7M9 16h7"></path></svg></span><h3>Vie associative</h3><p>Comptes rendus du Conseil d'administration, Assemblée générale, documents de l'association.</p><span class="btn-cont small" style="align-self:flex-start">Consulter</span></a>
+      <a href="#" class="tile"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span><h3>La Lettre de l'Association</h3><p>Le bulletin de liaison trimestriel, tous les numéros au même endroit.</p><span class="btn-cont small" style="align-self:flex-start">Lire les Lettres</span></a>
+      <a href="#" class="tile"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 12l-8 8-9-9V3h8z"></path><circle cx="7.5" cy="7.5" r="1.5"></circle></svg></span><h3>Mes tarifs préférentiels</h3><p>Colloques, revue EJSS, boutique de l'AFES <span style="color:#818284">[, formations ?]</span> : codes et liens.</p><span class="btn-cont small" style="align-self:flex-start">Voir mes avantages</span></a>
+      <a href="#" class="tile"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2.5 20c.8-3.5 3.3-5.5 6.5-5.5s5.7 2 6.5 5.5"></path></svg></span><h3>Mes communautés sur e-Sol</h3><p>Rejoindre les échanges : Fresque du Sol, groupes de travail, réseaux thématiques.</p><span class="btn-cont small" style="align-self:flex-start">Ouvrir e-Sol ↗</span></a>
+      <a href="#" class="tile"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg></span><h3>Mon profil</h3><p>Coordonnées, mot de passe, abonnement aux listes de diffusion. (Remplace le tableau de bord WordPress.)</p><span class="btn-cont small" style="align-self:flex-start">Modifier</span></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:70px 0;background:#F7F7F7">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:50px">
+    <div style="flex:2 1 560px">
+      <span class="sub-title">Rendez-vous de l'AFES, Comptes-rendus de réunions, CA...</span>
+      <h2 class="title">Vie associative</h2>
+      <img class="vague" src="assets/vague-ocre.svg" alt="">
+      <div class="row"><span class="tag">CR du CA</span><strong style="flex:1 1 300px;font-family:Livvic,sans-serif">Compte rendu du Conseil d'Administration du 22/09/2026</strong><span style="font-size:14px;color:#818284">13 oct. 2026</span></div>
+      <div class="row"><span class="tag">CR du CA</span><strong style="flex:1 1 300px;font-family:Livvic,sans-serif">Compte rendu du Conseil d'Administration du 26/05/2026</strong><span style="font-size:14px;color:#818284">13 juin 2026</span></div>
+      <div class="row"><span class="tag">AG</span><strong style="flex:1 1 300px;font-family:Livvic,sans-serif">Assemblée Générale 2026</strong><span style="font-size:14px;color:#818284">2026</span></div>
+      <div class="row"><span class="tag">Replay</span><strong style="flex:1 1 300px;font-family:Livvic,sans-serif">Rendez-vous #07 : Festival européen Sols &amp; Arts, centre de ressources</strong><span style="font-size:14px;color:#818284">22 avr. 2026</span></div>
+      <a href="#" class="btn-cont" style="margin-top:20px">Tout voir</a>
+    </div>
+    <div class="new" style="flex:1 1 300px;display:flex;flex-direction:column;gap:16px">
+      <span class="newlabel" style="align-self:flex-start">Nouveau</span>
+      <div style="background:#5F3114;color:#fff;border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <span style="font-family:Livvic,sans-serif;font-weight:800;color:#5EB26C">Prochain Rendez-vous de l'AFES</span>
+        <strong style="font-family:Livvic,sans-serif;font-size:20px">#08 · [date]</strong>
+        <span style="font-size:14px;color:#EBE6E0">Projets présentés : [à annoncer]</span>
+        <a href="#" class="btn-cont btn-white" style="align-self:flex-start">M'inscrire</a>
+      </div>
+      <div style="background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <span style="font-family:Livvic,sans-serif;font-weight:800;color:#237D3D">S'impliquer</span>
+        <p style="font-size:15px">Les groupes de travail cherchent des bénévoles : communication, financements…</p>
+        <a href="#" class="btn-cont small" style="align-self:flex-start">Voir les groupes de travail</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="foot"><div class="wrap" style="padding:40px 15px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px"><img src="assets/logo-afes-blanc.png" alt="AFES" style="width:176px"><span style="font-size:14px">© 2023 AFES - Tous droits réservés</span></div></footer>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":2300}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const show = this.props.showNew ?? true;
+    return { rootClass: show ? 'root show-new' : 'root' };
+  }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>
