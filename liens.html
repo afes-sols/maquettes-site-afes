@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cartographie des liens du site · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.6}
+a{color:#BF6525}
+.wrap{max-width:1170px;margin:0 auto;padding:0 20px;box-sizing:border-box}
+h1,h2,h3{font-family:Livvic,sans-serif;margin:0;line-height:1.2}
+p{margin:0}
+.topbar{background:#5F3114;color:#fff;font-size:14px;padding:10px 0}
+.topbar a{color:#fff;font-weight:700;text-decoration:none}
+.hero{position:relative;background:#3a2a1a url(assets/bg-sols.jpg) center/cover;padding:60px 0}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(47,24,10,.75)}
+.hero .wrap{position:relative;color:#fff;display:flex;flex-direction:column;gap:10px}
+.sub{font-family:Livvic,sans-serif;font-weight:800;font-size:20px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:30px;color:#5F3114;text-transform:uppercase;margin:4px 0 12px}
+.vague{display:block;width:160px;height:10px;margin-bottom:22px}
+section{padding:56px 0;border-bottom:1px solid #ECECEC}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.kpi{border:1px solid #ECECEC;border-radius:10px;padding:18px 20px;background:#fff}
+.kpi b{display:block;font-family:Livvic,sans-serif;font-weight:800;font-size:38px;color:#5F3114;line-height:1.1}
+.kpi.alert b{color:#B4454A}
+.kpi span{font-size:14px}
+.scroll{overflow-x:auto;border:1px solid #ECECEC;border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid #ECECEC;padding:8px 10px;text-align:left;vertical-align:top}
+th{font-family:Livvic,sans-serif;font-weight:700;color:#5F3114;background:#F7F7F7}
+.mx th.col{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;height:220px;padding:8px 4px;font-size:13px}
+.mx td{text-align:center;width:34px;padding:6px 2px;font-size:16px}
+.mx td.row{text-align:left;white-space:nowrap;font-family:Livvic,sans-serif;font-weight:700;color:#5F3114;width:auto;padding-right:14px}
+.mx td.self{background:#F2EEEA}
+.ex{color:#5F3114}
+.pr{color:#237D3D;font-weight:700}
+.mx td.ext{background:#FBF4EE}
+.legend{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;margin:14px 0}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.filters button{font-family:Livvic,sans-serif;font-weight:600;font-size:14px;min-height:40px;padding:0 14px;border-radius:5px;border:1px solid #BF6525;background:#fff;color:#BF6525;cursor:pointer}
+.filters button.on{background:#BF6525;color:#fff}
+.rec td:first-child{white-space:nowrap}
+.tag{display:inline-block;padding:1px 8px;border-radius:4px;background:#EBE6E0;color:#5F3114;font-size:12px;font-weight:700;margin:1px 2px 1px 0}
+.tag.esol{background:#5F3114;color:#fff}
+.tag.int{background:#E3F1E6;color:#1E6B34}
+.tag.ext{background:#FCDFC8;color:#5F3114}
+.p1{color:#B4454A;font-weight:800}
+.p2{color:#818284;font-weight:700}
+.note{background:#FFF6D6;border:1px solid #E5C66A;border-radius:10px;padding:16px 20px;font-size:15px}
+input[type=search]{min-height:40px;border:1px solid #DDDDDD;border-radius:5px;padding:0 12px;font:inherit;width:260px;max-width:100%}
+footer{background:#000 url(assets/bg-footer.jpg) center/cover;color:#BFC0C1;padding:30px 0;font-size:14px}
+.back{position:fixed;left:12px;bottom:12px;z-index:9;background:#2F180A;color:#fff;border-radius:999px;padding:10px 14px;text-decoration:none;font:600 13px/1 'Open Sans',sans-serif;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.back:hover{background:#BF6525;color:#fff}
+@media (max-width:700px){.hero h1{font-size:28px !important}.title{font-size:22px}section{padding:40px 0}.kpi b{font-size:30px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><a href="index.html">← Sommaire des maquettes</a> · Document de travail du GT Communication · novembre 2026</div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="sub" style="color:#5EB26C">7 · Cartographie des liens</span>
+    <h1 style="font-size:42px;font-weight:800;color:#fff">Comment les pages d'afes.fr se renvoient-elles les unes aux autres ?</h1>
+    <p style="font-size:18px;max-width:880px">Relevé fait le 25 novembre 2026 sur les 148 pages et 156 actualités publiques du site. On ne compte que les liens écrits dans le contenu des pages : le menu, le pied de page et les blocs répétés partout (bouton « Adhérer », dernières actualités, catégories) sont écartés.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <span class="sub">Ce qu'on constate</span>
+    <h2 class="title">Les chiffres clés</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="kpis" id="kpis"></div>
+    <p class="note" style="margin-top:22px"><strong>En clair :</strong> le site renvoie peu d'une page à l'autre. Un visiteur qui arrive sur une page par un moteur de recherche (une actualité, la Fresque du Sol, PromoSolsTerrain…) n'est presque jamais orienté vers la suite : la formation liée, l'événement à venir, la communauté sur e-Sol ou l'adhésion. La page « Se former », qui porte l'offre payante, n'est citée dans le texte d'aucune autre page.</p>
+  </div>
+</section>
+
+<section style="background:#F7F7F7">
+  <div class="wrap">
+    <span class="sub">Qui renvoie vers qui ?</span>
+    <h2 class="title">Matrice des pages clés</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <p>Lire en ligne : la page de gauche contient (ou devrait contenir) un lien vers la page en colonne.</p>
+    <div class="legend"><span><b class="ex">●</b> lien existant aujourd'hui</span><span><b class="pr">○</b> lien proposé</span><span style="background:#FBF4EE;padding:0 6px">colonnes beiges : sites externes</span></div>
+    <div class="scroll"><table class="mx" id="matrix"></table></div>
+    <p style="font-size:14px;color:#818284;margin-top:10px">« Rhizobiome » = formation.rhizobiome.coop, site externe où se font aujourd'hui les inscriptions à PromoSolsTerrain, à la formation Fresque du Sol et à la formation sols forestiers (IPRSol). « Adhérer » n'est relié que par le bouton général présent sur toutes les pages, jamais depuis le texte d'une page.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="sub">Que faire ?</span>
+    <h2 class="title">Liens à ajouter, page par page</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="filters" id="recFilters"></div>
+    <div class="scroll"><table class="rec"><thead><tr><th>Priorité</th><th>Page</th><th>Liens à ajouter</th><th>Pourquoi</th><th>Maquette</th></tr></thead><tbody id="recBody"></tbody></table></div>
+    <p style="font-size:14px;margin-top:12px"><span class="tag int">interne</span> page d'afes.fr · <span class="tag esol">e-Sol</span> plateforme e-Sol · <span class="tag ext">externe</span> autre site</p>
+  </div>
+</section>
+
+<section style="background:#F7F7F7">
+  <div class="wrap">
+    <span class="sub">Principe proposé</span>
+    <h2 class="title">Site et e-Sol : qui fait quoi</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="kpis">
+      <div class="kpi"><span class="tag int">afes.fr</span><p style="margin-top:8px"><strong>Présente</strong> : ce qu'est le projet, à qui il s'adresse, les dates, l'inscription, les ressources stables.</p></div>
+      <div class="kpi"><span class="tag esol">e-Sol</span><p style="margin-top:8px"><strong>Fait vivre</strong> : discussions, retours d'expérience, annonces, annuaire, entraide entre membres d'une communauté.</p></div>
+      <div class="kpi"><span class="tag">Règle</span><p style="margin-top:8px">Chaque page projet qui a une communauté sur e-Sol affiche un bloc « Rejoindre la communauté », et la communauté e-Sol renvoie vers la page projet. La page « Réseau e-Sol » liste toutes ces communautés.</p></div>
+    </div>
+    <p style="margin-top:16px;font-size:15px">Communautés e-Sol déjà citées sur le site : PromoSolsTerrain, Référents qualité des sols forestiers, Sols &amp; Arts, Journée Mondiale des Sols. À venir : Fresque du Sol.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="sub">Annexe pour le webmaster</span>
+    <h2 class="title">Les 148 pages, une par une</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="filters" id="pgFilters"></div>
+    <p style="margin-bottom:12px"><label for="q" style="font-weight:700;margin-right:8px">Rechercher</label><input id="q" type="search" placeholder="titre ou adresse"></p>
+    <div class="scroll"><table><thead><tr><th>Page</th><th title="Nombre de pages ou actualités qui citent cette page dans leur texte">Citée par</th><th title="Nombre de pages du site citées dans son texte">Renvoie vers</th><th>e-Sol</th></tr></thead><tbody id="pgBody"></tbody></table></div>
+    <p id="pgCount" style="font-size:14px;color:#818284;margin-top:8px"></p>
+  </div>
+</section>
+
+<footer><div class="wrap">Relevé automatique du 25/11/2026 (pages et actualités publiques, sans connexion). Les chiffres peuvent varier de quelques unités selon ce qu'on compte comme « bloc répété ».</div></footer>
+<a class="back" href="index.html">← Sommaire</a>
+
+<script src="liens-data.js"></script>
+<script>
+(function(){
+  var L = window.LIENS;
+  var kpis = [
+    [L.n_content_links, 'liens écrits dans le contenu, pour ' + L.n_pages + ' pages et ' + L.n_posts + ' actualités (moins de 2 par document)', false],
+    [L.pages_dead_end, 'pages sans aucun lien vers une autre page dans leur texte (dont Fresque du Sol, PromoSolsTerrain, Webinaires, Adhérer, Boutique, page e-Sol)', true],
+    [L.pages_orphan, 'pages jamais citées dans le texte d’une autre page, accessibles seulement par le menu (dont Se former, Espace emploi, Adhérer)', true],
+    [L.posts_no_link + ' / ' + L.n_posts, 'actualités qui ne renvoient vers aucune page du site', true],
+    [L.docs_with_esol + ' / ' + (L.n_pages + L.n_posts), 'pages ou actualités contiennent un lien vers e-Sol : c’est très peu', false],
+    [3, 'formations dont l’inscription renvoie vers un site externe (Rhizobiome), sans dates affichées sur afes.fr', false]
+  ];
+  document.getElementById('kpis').innerHTML = kpis.map(function(k){
+    return '<div class="kpi' + (k[2] ? ' alert' : '') + '"><b>' + k[0] + '</b><span>' + k[1] + '</span></div>';
+  }).join('');
+
+  /* Matrice */
+  var N = ['Se former','PromoSolsTerrain','Fresque du Sol','Référents sols forestiers','Projet IPRSol','Reconnaissance des compétences','JMS 2026','Festival Sols & Arts','SOILSCAPE','JES','Webinaires','Centre de ressources','Étude et Gestion des Sols','Bourses Demolon','Adhérer','Espace emploi','Page Réseau e-Sol'];
+  var X = ['e-Sol','Rhizobiome'];
+  var E = { /* existants (relevé) */
+    'Se former':['PromoSolsTerrain','Fresque du Sol','Projet IPRSol'],
+    'Fresque du Sol':['Centre de ressources','Rhizobiome'],
+    'Référents sols forestiers':['Projet IPRSol','Centre de ressources','e-Sol'],
+    'PromoSolsTerrain':['e-Sol','Rhizobiome'],
+    'Projet IPRSol':['Rhizobiome'],
+    'SOILSCAPE':['Festival Sols & Arts'],
+    'Étude et Gestion des Sols':['Centre de ressources'],
+    'JMS 2026':['e-Sol'],
+    'Page Réseau e-Sol':['e-Sol']
+  };
+  var P = { /* proposés */
+    'Se former':['Reconnaissance des compétences','Espace emploi'],
+    'Fresque du Sol':['Se former','JMS 2026','e-Sol'],
+    'PromoSolsTerrain':['Se former','Reconnaissance des compétences'],
+    'Référents sols forestiers':['Se former'],
+    'Projet IPRSol':['Se former','Référents sols forestiers'],
+    'Reconnaissance des compétences':['Se former','PromoSolsTerrain','Espace emploi'],
+    'JMS 2026':['Fresque du Sol','Festival Sols & Arts','Webinaires','Centre de ressources'],
+    'Festival Sols & Arts':['SOILSCAPE','JMS 2026','e-Sol'],
+    'SOILSCAPE':['JMS 2026'],
+    'JES':['Bourses Demolon'],
+    'Webinaires':['Centre de ressources','JMS 2026'],
+    'Centre de ressources':['Webinaires','Étude et Gestion des Sols'],
+    'Bourses Demolon':['JES','Adhérer'],
+    'Adhérer':['Étude et Gestion des Sols','Webinaires','Bourses Demolon'],
+    'Espace emploi':['Se former','Reconnaissance des compétences','e-Sol'],
+    'Page Réseau e-Sol':['PromoSolsTerrain','Référents sols forestiers','Festival Sols & Arts','Fresque du Sol','Espace emploi']
+  };
+  var cols = N.concat(X);
+  var h = '<thead><tr><th>Page</th>' + cols.map(function(c){ return '<th class="col' + (X.indexOf(c) > -1 ? ' ext' : '') + '">' + c + '</th>'; }).join('') + '</tr></thead><tbody>';
+  N.forEach(function(r){
+    h += '<tr><td class="row">' + r + '</td>';
+    cols.forEach(function(c){
+      var cls = X.indexOf(c) > -1 ? 'ext' : '';
+      if (c === r) { h += '<td class="self"></td>'; return; }
+      var v = (E[r] || []).indexOf(c) > -1 ? '<b class="ex" title="existant">●</b>' : ((P[r] || []).indexOf(c) > -1 ? '<b class="pr" title="proposé">○</b>' : '');
+      h += '<td class="' + cls + '">' + v + '</td>';
+    });
+    h += '</tr>';
+  });
+  document.getElementById('matrix').innerHTML = h + '</tbody>';
+
+  /* Recommandations */
+  var S = 'https://www.afes.fr';
+  var R = [
+    ['Formations',1,'Se former','/les-sols/se-former/',[['int','Liens vers elle depuis : Fresque du Sol, PromoSolsTerrain, IPRSol, Reconnaissance des compétences, Référentiel pédologique, Espace emploi, accueil']],'La page qui porte l’offre payante n’est citée dans le texte d’aucune page : on n’y arrive que par « Les sols › Se former ».','formations-catalogue.html'],
+    ['Formations',1,'La Fresque du Sol','/nos-missions/animer/fresque-du-sol/',[['int','Se former (formation animateur·rice)'],['int','Journée Mondiale des Sols 2026'],['esol','Communauté Fresque du Sol (à créer)']],'Aucun lien vers une autre page dans le texte, alors que c’est l’une des pages les plus citées (7 fois). Les sessions renvoient directement vers Rhizobiome.','interieur-d.html'],
+    ['Formations',1,'PromoSolsTerrain','/nos-missions/reconnaitre-et-federer/promosolsterrain/',[['int','Se former'],['int','Reconnaissance des compétences en pédologie (étape suivante)'],['int','Référentiel pédologique']],'Aucun lien interne. La communauté e-Sol et l’inscription Rhizobiome sont déjà là : à garder.','formation-fiche.html'],
+    ['Formations',1,'Inscriptions aux formations','/les-sols/se-former/',[['ext','Rhizobiome : garder le lien, mais après une fiche AFES avec dates, lieux, tarifs']],'3 formations envoient le visiteur sur un autre site pour voir les sessions. Afficher les dates sur afes.fr garde le visiteur, et l’AFES connaît ses chiffres d’audience.','formation-fiche.html'],
+    ['Formations',2,'Référentiel pédologique','/les-sols/referentiel-pedologique/',[['int','PromoSolsTerrain (apprendre à décrire un sol)'],['int','Reconnaissance des compétences']],'Le public du Référentiel est le cœur de cible des formations terrain.',''],
+    ['Formations',2,'Reconnaissance des compétences en pédologie','/nos-missions/reconnaitre-et-federer/reconnaissance-et-competences-en-pedologie/',[['int','Se former'],['int','Espace emploi'],['esol','Annuaire e-Sol']],'Les quelque 30 fiches de personnes reconnues sont toutes des culs-de-sac : ajouter un retour vers la page principale et vers les formations.',''],
+    ['Projets',1,'Journée Mondiale des Sols 2026','/nos-missions/animer/jms/journee-mondiale-des-sols-2026/',[['int','La Fresque du Sol'],['int','Festival / soirée Sols & Arts'],['int','Webinaires'],['int','Centre de ressources (replays JMS 2026)']],'Les replays des webinaires JMS 2026 sont dans le centre de ressources, mais la page JMS n’y renvoie pas. Plusieurs sous-pages (jours, webinaires) n’ont aucun lien.','interieur-e.html'],
+    ['Projets',1,'Webinaires','/nos-missions/animer/webinaires/',[['int','Centre de ressources (replays)'],['int','Webinaires JMS 2026'],['int','Rendez-vous de l’AFES (adhérents)']],'Aucun lien interne : la page ne mène nulle part sur le site.',''],
+    ['Projets',2,'Festival européen Sols & Arts','/soilscape/festival-des-sols/',[['int','SOILSCAPE (projet parent)'],['int','JMS 2026 (soirée Sols & Arts)'],['esol','Communauté Sols & Arts']],'La communauté Sols & Arts sur e-Sol n’est citée que dans une actualité.','projets.html'],
+    ['Projets',2,'SOILSCAPE','/soilscape/',[['int','JMS 2026'],['int','Offre de stage SOILSCAPE'],['int','Page « Nos projets »']],'Projet européen phare, relié seulement au Festival.','projets.html'],
+    ['Projets',2,'Journées d’Étude des Sols','/nos-missions/animer/jes/',[['int','Bourses Demolon'],['int','JES 2027 : tournoi étudiant (actualité)']],'Les bourses aident les jeunes à venir aux congrès : lien naturel dans les deux sens.',''],
+    ['e-Sol',1,'Réseau e-Sol','/nos-missions/valoriser/plateforme-e-sol/',[['int','PromoSolsTerrain, Référents sols forestiers, Festival Sols & Arts, Fresque du Sol'],['int','Espace emploi']],'La page qui présente e-Sol ne renvoie vers aucune page du site : elle devrait lister les communautés et leurs pages projet.','projets.html'],
+    ['e-Sol',1,'Espace emploi','/les-sols/espace-emploi/',[['esol','Annuaire et dépôt de CV sur e-Sol'],['int','Se former'],['int','Formations initiales (carte)'],['int','Reconnaissance des compétences']],'Jamais citée ailleurs, un seul lien (liste de diffusion). Le chantier Espace emploi prévoit déjà le lien vers e-Sol.','adherent-ea3.html'],
+    ['e-Sol',2,'Sciences et recherches participatives','/nos-missions/reconnaitre-et-federer/recherches-participatives/',[['esol','Communauté SRP sur e-Sol [à vérifier]'],['int','Numéro spécial EGS sur les SRP']],'Réseau très actif (11 citations) : candidat naturel à une communauté e-Sol.',''],
+    ['Adhésion',1,'Adhérer','/afes/adherer/',[['int','Étude et Gestion des Sols'],['int','Webinaires'],['int','Bourses Demolon'],['int','Boutique'],['int','Rendez-vous de l’AFES']],'Le texte cite tous ces avantages sans aucun lien. Aucune page ne cite « Adhérer » dans son texte : seulement le bouton général.','adherent-ea1.html'],
+    ['Adhésion',2,'Boutique','/afes/boutique/',[['int','Adhérer (tarif réduit pour les adhérent·es)'],['int','Référentiel pédologique']],'Aucun lien interne.',''],
+    ['Adhésion',2,'Bourses Demolon','/nos-missions/reconnaitre-et-federer/bourses-demolon/',[['int','Adhérer (« vos cotisations financent les bourses »)'],['int','JES']],'Argument d’adhésion fort, pas exploité.',''],
+    ['Adhésion',2,'Présentation de l’AFES','/afes/presentation-afes/',[['int','Nos missions'],['int','Représentation'],['int','Rapport d’activité'],['int','Adhérer']],'Aucun lien interne.',''],
+    ['Actualités',1,'Toutes les actualités','/actualites/',[['int','Un lien vers la page du projet ou de l’événement concerné, en fin d’article'],['int','Un bloc « Voir aussi » par catégorie']],L.posts_no_link + ' actualités sur ' + L.n_posts + ' ne renvoient vers aucune page du site. Exemples : appel JES 2027 → page JES ; Fête de la Nature → Festival / SOILSCAPE.',''],
+    ['Actualités',2,'Sous-pages (jours JMS, jours du Festival, fiches de personnes)','/nos-missions/animer/jms/journee-mondiale-des-sols-2026/',[['int','Retour à la page parente'],['int','Page précédente / suivante']],'Une trentaine de sous-pages sans aucun lien : ajouter la navigation de la maquette D.','interieur-d.html']
+  ];
+  var themes = ['Tous','Formations','Projets','e-Sol','Adhésion','Actualités'];
+  var curT = 'Tous';
+  function drawRec(){
+    document.getElementById('recFilters').innerHTML = themes.map(function(t){ return '<button type="button" class="' + (t === curT ? 'on' : '') + '" aria-pressed="' + (t === curT) + '" data-t="' + t + '">' + t + '</button>'; }).join('');
+    document.getElementById('recBody').innerHTML = R.filter(function(r){ return curT === 'Tous' || r[0] === curT; }).map(function(r){
+      var links = r[4].map(function(l){ return '<div><span class="tag ' + l[0] + '">' + (l[0] === 'int' ? 'interne' : l[0] === 'esol' ? 'e-Sol' : 'externe') + '</span>' + l[1] + '</div>'; }).join('');
+      return '<tr><td><span class="' + (r[1] === 1 ? 'p1' : 'p2') + '">' + (r[1] === 1 ? 'Haute' : 'Moyenne') + '</span><br><span class="tag">' + r[0] + '</span></td><td><a href="' + S + r[3] + '" target="_blank" rel="noopener">' + r[2] + ' ↗</a></td><td>' + links + '</td><td>' + r[5] + '</td><td>' + (r[6] ? '<a href="' + r[6] + '">voir</a>' : '') + '</td></tr>';
+    }).join('');
+    Array.prototype.forEach.call(document.querySelectorAll('#recFilters button'), function(b){ b.onclick = function(){ curT = b.getAttribute('data-t'); drawRec(); }; });
+  }
+  drawRec();
+
+  /* Annexe */
+  var pf = [['all','Toutes'],['dead','Sans lien sortant'],['orphan','Jamais citées'],['esol','Avec lien e-Sol']];
+  var curP = 'all';
+  function drawPages(){
+    document.getElementById('pgFilters').innerHTML = pf.map(function(f){ return '<button type="button" class="' + (f[0] === curP ? 'on' : '') + '" aria-pressed="' + (f[0] === curP) + '" data-f="' + f[0] + '">' + f[1] + '</button>'; }).join('');
+    var q = (document.getElementById('q').value || '').toLowerCase();
+    var rows = L.rows.filter(function(r){
+      if (curP === 'dead' && r.o !== 0) return false;
+      if (curP === 'orphan' && r.i !== 0) return false;
+      if (curP === 'esol' && !r.e) return false;
+      return !q || (r.t + ' ' + r.p).toLowerCase().indexOf(q) > -1;
+    });
+    document.getElementById('pgBody').innerHTML = rows.map(function(r){
+      return '<tr><td><a href="' + S + r.p + '" target="_blank" rel="noopener">' + (r.t || r.p) + '</a><br><span style="font-size:12px;color:#818284">' + r.p + '</span></td><td style="' + (r.i === 0 ? 'color:#B4454A;font-weight:700' : '') + '">' + r.i + '</td><td style="' + (r.o === 0 ? 'color:#B4454A;font-weight:700' : '') + '">' + r.o + '</td><td>' + (r.e ? '<span class="tag esol">e-Sol</span>' : '') + '</td></tr>';
+    }).join('');
+    document.getElementById('pgCount').textContent = rows.length + ' page(s) affichée(s)';
+    Array.prototype.forEach.call(document.querySelectorAll('#pgFilters button'), function(b){ b.onclick = function(){ curP = b.getAttribute('data-f'); drawPages(); }; });
+  }
+  document.getElementById('q').addEventListener('input', drawPages);
+  drawPages();
+})();
+</script>
+</body>
+</html>
