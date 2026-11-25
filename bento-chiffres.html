@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/">
+<title>Bento 1 · Chiffres clés · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.55}
+.wrap{max-width:1170px;margin:0 auto;padding:0 15px;box-sizing:border-box}
+.root h2,.root h3,.root h4{font-family:Livvic,sans-serif;margin:0;line-height:1.15}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.sub-title{font-family:Livvic,sans-serif;font-weight:800;font-size:22px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:34px;color:#5F3114;text-transform:uppercase}
+.vague{display:block;width:160px;height:10px;margin:16px 0 22px}
+.btn-fill{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:5px;background:#BF6525;border:1px solid #BF6525;color:#fff;font-family:Livvic,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;text-decoration:none}
+.btn-fill:hover{background:#5F3114;border-color:#5F3114;color:#fff}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:200px;gap:18px}
+.b{position:relative;overflow:hidden;border-radius:14px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;text-decoration:none;color:inherit;transition:transform .25s ease, box-shadow .25s ease}
+.b:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(47,24,10,.18)}
+.b .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.b:hover .bg{transform:scale(1.05)}
+.b .veil{position:absolute;inset:0;background:rgba(30,15,5,.55)}
+.b > *:not(.bg):not(.veil){position:relative}
+.num{font-family:Livvic,sans-serif;font-weight:800;line-height:1;letter-spacing:-.01em}
+.w2{grid-column:span 2}.h2{grid-row:span 2}
+.src{font-size:12px;opacity:.85}
+@media (max-width:900px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.bento{grid-template-columns:1fr;grid-auto-rows:auto}.w2,.h2{grid-column:auto;grid-row:auto}.b{min-height:170px}}
+</style>
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="root">
+<div class="mq">Maquette de travail GT Com · Section bento 1 : chiffres clés (exemple pour l'accueil ou la page « L'AFES »)</div>
+<section style="padding:80px 0">
+  <div class="wrap">
+    <span class="sub-title">En quelques chiffres</span>
+    <h2 class="title">Les sols, et l'AFES</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="bento">
+      <div class="b w2 h2" style="color:#fff">
+        <img class="bg" src="assets/bg-sols.jpg" alt="">
+        <span class="veil"></span>
+        <span class="num" style="font-size:96px">95 %</span>
+        <h3 style="font-size:26px;color:#fff;font-weight:700">de l'alimentation provient du sol</h3>
+        <p style="max-width:420px">Les sols, épiderme de la Terre, sont une ressource non renouvelable à l'échelle humaine.</p>
+      </div>
+      <div class="b" style="background:#237D3D;color:#fff">
+        <span class="num" style="font-size:48px">25 à 60 %</span>
+        <p style="font-weight:600">de la biodiversité terrestre se trouve dans les sols</p>
+      </div>
+      <div class="b" style="background:#F9BF92;color:#2F180A">
+        <span class="num" style="font-size:48px;color:#5F3114">20 000</span>
+        <p style="font-weight:600">mégatonnes de carbone séquestrables par les sols en 25 ans</p>
+      </div>
+      <div class="b w2" style="background:#5F3114;color:#fff;flex-direction:row;align-items:center;justify-content:flex-start;gap:24px">
+        <img src="assets/logo-afes-blanc.svg" alt="" style="width:96px;flex-shrink:0">
+        <div><span class="num" style="font-size:44px;color:#F9BF92">Depuis 1934</span><p style="margin-top:6px">au service des sols, et branche française de l'Union internationale de science du sol (IUSS).</p></div>
+      </div>
+      <div class="b" style="background:#EBE6E0">
+        <span class="num" style="font-size:44px;color:#5F3114">2012</span>
+        <p style="font-weight:600">premiers webinaires de l'AFES, en accès libre</p>
+      </div>
+      <div class="b" style="background:#F7F7F7;border:1px solid #ECECEC">
+        <span class="num" style="font-size:44px;color:#237D3D">[N]</span>
+        <p style="font-weight:600">adhérent·es en 2026</p>
+        <a href="#" class="btn-fill" style="align-self:flex-start;margin-top:6px">Nous rejoindre</a>
+      </div>
+      <div class="b w2" style="background:#fff;border:2px solid #BF6525;flex-direction:row;align-items:center;justify-content:space-between;gap:20px">
+        <div><span class="num" style="font-size:44px;color:#BF6525">7</span><p style="font-weight:600;margin-top:4px">Rendez-vous de l'AFES depuis janvier 2025, pour présenter les projets aux adhérent·es</p></div>
+        <img src="assets/missions.jpg" alt="" style="width:150px;height:130px;object-fit:cover;border-radius:10px;flex-shrink:0">
+      </div>
+    </div>
+    <p class="src" style="margin-top:14px;color:#818284">Chiffres sur les sols : ceux affichés aujourd'hui sur l'accueil d'afes.fr. [N] = chiffre à fournir.</p>
+  </div>
+</section>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1040}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

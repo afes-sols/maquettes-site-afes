@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/nos-missions/">
+<title>Bento 2 · Projets en cours · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#F7F7F7;font-size:16px;line-height:1.55}
+.wrap{max-width:1170px;margin:0 auto;padding:0 15px;box-sizing:border-box}
+.root h2,.root h3{font-family:Livvic,sans-serif;margin:0;line-height:1.15}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.sub-title{font-family:Livvic,sans-serif;font-weight:800;font-size:22px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:34px;color:#5F3114;text-transform:uppercase}
+.vague{display:block;width:160px;height:10px;margin:16px 0 22px}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:210px;gap:18px}
+.b{position:relative;overflow:hidden;border-radius:14px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;text-decoration:none;color:#fff;background:#5F3114;transition:transform .25s ease, box-shadow .25s ease}
+.b:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(47,24,10,.18);color:#fff}
+.b .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.b:hover .bg{transform:scale(1.05)}
+.b .veil{position:absolute;inset:0;background:linear-gradient(0deg,rgba(30,15,5,.82) 0%,rgba(30,15,5,.25) 55%,rgba(30,15,5,0) 100%)}
+.b > *:not(.bg):not(.veil){position:relative}
+.b h3{font-size:22px;font-weight:800;color:#fff}
+.tag{display:inline-flex;align-self:flex-start;align-items:center;padding:2px 10px;border-radius:4px;background:#fff;color:#5F3114;font-size:12px;font-weight:700}
+.tag.g{background:#237D3D;color:#fff}
+.go{font-family:Livvic,sans-serif;font-weight:700;font-size:14px;color:#F9BF92}
+.w2{grid-column:span 2}.h2{grid-row:span 2}
+@media (max-width:900px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.bento{grid-template-columns:1fr;grid-auto-rows:auto}.w2,.h2{grid-column:auto;grid-row:auto}.b{min-height:200px}}
+</style>
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="root">
+<div class="mq">Maquette de travail GT Com · Section bento 2 : projets en cours (exemple pour l'accueil ou la page Projets)</div>
+<section style="padding:80px 0">
+  <div class="wrap">
+    <span class="sub-title">En ce moment</span>
+    <h2 class="title">Nos projets</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="bento">
+      <a href="#" class="b w2 h2">
+        <img class="bg" src="assets/p-jms.png" alt="">
+        <span class="veil"></span>
+        <span class="tag g">5 décembre 2026 · temps fort</span>
+        <h3 style="font-size:32px">Journée Mondiale des Sols 2026</h3>
+        <p style="max-width:440px">Organisez ou rejoignez un événement partout en France.</p>
+        <span class="go">Participer →</span>
+      </a>
+      <a href="#" class="b h2">
+        <img class="bg" src="assets/p-fresque.jpg" alt="">
+        <span class="veil"></span>
+        <span class="tag">Jeu sérieux</span>
+        <h3>La Fresque du Sol</h3>
+        <p style="font-size:14px">50 cartes et 3 h pour comprendre les sols.</p>
+        <span class="go">Découvrir →</span>
+      </a>
+      <a href="#" class="b">
+        <img class="bg" src="assets/p-festival.png" alt="">
+        <span class="veil"></span>
+        <span class="tag">Art et science</span>
+        <h3>Festival Sols &amp; Arts</h3>
+      </a>
+      <a href="#" class="b">
+        <img class="bg" src="assets/p-soilscape.jpg" alt="">
+        <span class="veil"></span>
+        <span class="tag">Horizon Europe</span>
+        <h3>SOILSCAPE</h3>
+      </a>
+      <a href="#" class="b w2" style="flex-direction:row;align-items:flex-end;justify-content:space-between">
+        <img class="bg" src="assets/f-promosols.png" alt="">
+        <span class="veil"></span>
+        <div style="display:flex;flex-direction:column;gap:6px"><span class="tag">Formation terrain</span><h3>PromoSolsTerrain</h3><p style="font-size:14px">Décrire un sol sur le terrain, 4 fosses par session.</p></div>
+        <span class="go">S'inscrire →</span>
+      </a>
+      <a href="#" class="b" style="background:#5F3114;justify-content:space-between">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#5EB26C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2.5 20c.8-3.5 3.3-5.5 6.5-5.5s5.7 2 6.5 5.5M15.5 14.5c2.8-.3 5 1.3 6 4.5"></path></svg>
+        <div><h3>Les communautés sur e-Sol</h3><p style="font-size:14px;color:#EBE6E0;margin-top:4px">PromoSolsTerrain, sols forestiers, Sols &amp; Arts…</p><span class="go">Rejoindre ↗</span></div>
+      </a>
+      <a href="#" class="b" style="background:#A9581F;justify-content:space-between">
+        <span style="font-family:Livvic,sans-serif;font-weight:800;font-size:46px;line-height:1">12</span>
+        <div><h3>Tous nos projets</h3><p style="font-size:14px;margin-top:4px">Valoriser, reconnaître et fédérer, animer.</p><span class="go" style="color:#fff">Voir la page Projets →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

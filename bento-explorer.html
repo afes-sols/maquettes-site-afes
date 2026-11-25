@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/nos-missions/valoriser/centre-de-ressources/">
+<title>Bento 3 · Explorer · Maquettes site AFES</title>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BF6525}a:hover{color:#5F3114}
+.root{font-family:'Open Sans',sans-serif;color:#000;background:#fff;font-size:16px;line-height:1.55}
+.wrap{max-width:1170px;margin:0 auto;padding:0 15px;box-sizing:border-box}
+.root h2,.root h3{font-family:Livvic,sans-serif;margin:0;line-height:1.15}
+.root p{margin:0}
+.mq{background:#F9BF92;color:#2F180A;font-size:13px;font-weight:600;text-align:center;padding:3px 12px}
+.sub-title{font-family:Livvic,sans-serif;font-weight:800;font-size:22px;color:#237D3D;display:block}
+.title{font-family:Livvic,sans-serif;font-weight:800;font-size:34px;color:#5F3114;text-transform:uppercase}
+.vague{display:block;width:160px;height:10px;margin:16px 0 22px}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:200px;gap:18px}
+.b{position:relative;overflow:hidden;border-radius:14px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;text-decoration:none;color:#000;transition:transform .25s ease, box-shadow .25s ease}
+.b:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(47,24,10,.16)}
+.b h3{font-size:21px;font-weight:800;color:#5F3114}
+.b p{font-size:14px}
+.tag{display:inline-flex;align-self:flex-start;align-items:center;gap:4px;padding:2px 10px;border-radius:4px;font-size:12px;font-weight:700}
+.tag.int{background:#E3F1E6;color:#1E6B34}
+.tag.ext{background:#FCDFC8;color:#5F3114}
+.tag.esol{background:#fff;color:#5F3114}
+.ico{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.w2{grid-column:span 2}.h2{grid-row:span 2}
+.field{display:flex;background:#fff;border-radius:6px;overflow:hidden;border:1px solid #DDDDDD}
+.field input{flex:1;border:0;padding:0 14px;min-height:46px;font:inherit;min-width:0}
+.field button{border:0;background:#BF6525;color:#fff;padding:0 16px;font-family:Livvic,sans-serif;font-weight:700;cursor:pointer}
+@media (max-width:900px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.bento{grid-template-columns:1fr;grid-auto-rows:auto}.w2,.h2{grid-column:auto;grid-row:auto}.b{min-height:170px}}
+</style>
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div id="dc-root"></div>
+<template id="dc-template">
+<div class="root">
+<div class="mq">Maquette de travail GT Com · Section bento 3 : « Explorer », liens internes et externes (à placer en bas des pages sans issue)</div>
+<section style="padding:80px 0">
+  <div class="wrap">
+    <span class="sub-title">Pour aller plus loin</span>
+    <h2 class="title">Explorer les sols avec l'AFES</h2>
+    <img class="vague" src="assets/vague-ocre.svg" alt="">
+    <div class="bento">
+      <div class="b w2 h2" style="background:#EBE6E0">
+        <span class="tag int">Sur afes.fr</span>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <h3 style="font-size:30px">Centre de ressources</h3>
+          <p style="font-size:16px;max-width:460px">Webinaires, articles de la revue, synthèses, rapports : un centre de ressources pour mieux connaître les sols et les enjeux de leur préservation.</p>
+          <div class="field" role="search"><label for="cdr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Rechercher une ressource</label><input id="cdr" type="search" placeholder="Rechercher une ressource…"><button type="button">Chercher</button></div>
+          <p style="font-size:13px;color:#5F3114">Exemples : synthèses de la Fresque du Sol · webinaires JMS 2026 · tassement des sols</p>
+        </div>
+      </div>
+      <a href="#" class="b" style="background:#fff;border:1px solid #ECECEC">
+        <span class="tag int">Revue</span>
+        <img src="assets/p-egs.png" alt="Étude et Gestion des Sols" style="height:62px;object-fit:contain;align-self:flex-start">
+        <h3 style="font-size:18px">Étude et Gestion des Sols</h3>
+      </a>
+      <a href="#" class="b" style="background:#5F3114;color:#fff">
+        <span class="tag ext">YouTube ↗</span>
+        <span class="ico" style="background:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="#B4454A" aria-hidden="true"><path d="M8 5l12 7-12 7z"></path></svg></span>
+        <div><h3 style="color:#fff">Webinaires</h3><p style="color:#EBE6E0">Depuis 2012, tous les replays sur la chaîne de l'AFES.</p></div>
+      </a>
+      <a href="#" class="b" style="background:#237D3D;color:#fff">
+        <span class="tag esol">e-Sol ↗</span>
+        <span class="ico" style="background:rgba(255,255,255,.15)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2.5 20c.8-3.5 3.3-5.5 6.5-5.5s5.7 2 6.5 5.5"></path></svg></span>
+        <div><h3 style="color:#fff">Réseau e-Sol</h3><p>Annuaire, forum, communautés de projets.</p></div>
+      </a>
+      <a href="#" class="b" style="background:#F9BF92">
+        <span class="tag int">Outil</span>
+        <span class="ico" style="background:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5F3114" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6a2 2 0 012 2v14a2 2 0 00-2-2H4zM20 4h-6a2 2 0 00-2 2v14a2 2 0 012-2h6z"></path></svg></span>
+        <div><h3>Référentiel pédologique</h3><p>La référence pour nommer les sols.</p></div>
+      </a>
+      <div class="b w2" style="background:#5F3114;color:#fff">
+        <span class="tag ext">Infolettre</span>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <h3 style="color:#fff;font-size:24px">Recevoir les nouvelles de l'AFES</h3>
+          <div class="field" style="border:0;max-width:480px"><label for="nl" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Votre adresse e-mail</label><input id="nl" type="email" placeholder="Votre adresse e-mail"><button type="button">S'inscrire</button></div>
+        </div>
+      </div>
+      <a href="#" class="b" style="background:#fff;border:1px solid #ECECEC">
+        <span class="tag int">Métiers</span>
+        <span class="ico" style="background:#EBE6E0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5F3114" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg></span>
+        <div><h3>Espace emploi</h3><p>Métiers, offres, stages.</p></div>
+      </a>
+      <div class="b" style="background:#EBE6E0">
+        <span class="tag ext">Nous suivre ↗</span>
+        <div style="display:flex;gap:10px">
+          <a href="#" class="ico" style="background:#fff" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="#5F3114" aria-hidden="true"><path d="M4 9h4v12H4zM6 3a2 2 0 110 4 2 2 0 010-4zM10 9h4v1.7c.6-1 1.9-2 3.8-2 4 0 4.2 2.6 4.2 6V21h-4v-5.5c0-1.4 0-3.2-2-3.2s-2.2 1.5-2.2 3.1V21h-4z"></path></svg></a>
+          <a href="#" class="ico" style="background:#fff" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F3114" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle></svg></a>
+          <a href="#" class="ico" style="background:#fff" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="#5F3114" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.5V11H7v4h3v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z"></path></svg></a>
+        </div>
+        <h3>Réseaux sociaux</h3>
+      </div>
+    </div>
+    <p style="font-size:14px;margin-top:14px"><span class="tag int">vert</span> page d'afes.fr · <span class="tag ext">sable</span> site externe · <span class="tag esol" style="border:1px solid #5F3114">e-Sol</span> plateforme e-Sol</p>
+  </div>
+</section>
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>
