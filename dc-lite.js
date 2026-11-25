@@ -189,6 +189,16 @@
     const bar = document.createElement('div');
     bar.className = 'dc-tools';
     bar.innerHTML = '<a href="index.html">← Sommaire</a>';
+    const orig = document.querySelector('meta[name="dc-original"]');
+    if (orig) {
+      const o = document.createElement('a');
+      o.href = orig.getAttribute('content');
+      o.target = '_blank';
+      o.rel = 'noopener';
+      o.textContent = 'Page actuelle ↗';
+      o.title = 'Ouvrir la page correspondante sur afes.fr, pour comparer';
+      bar.appendChild(o);
+    }
     if ('showNew' in propsDef) {
       const b = document.createElement('button');
       b.type = 'button';

@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/">
 <title>Accueil A · Sobre · Maquettes site AFES</title>
 <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
@@ -52,7 +53,7 @@ a{color:#BF6525}a:hover{color:#5F3114}
 <div id="dc-root"></div>
 <template id="dc-template">
 <div class="{{rootClass}}">
-<div class="mq">Maquette de travail GT Com · Accueil, variante A « sobre » · les blocs en pointillés verts sont les ajouts</div>
+<div class="mq">Maquette de travail GT Com · Accueil, variante A « sobre » · pour repérer les ajouts : « Montrer les nouveautés »</div>
 
 <div class="topbar"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;flex-wrap:wrap">
   <span style="display:flex;align-items:center;gap:12px"><img src="assets/iuss-blanc.png" alt="IUSS" style="height:28px"> L'AFES est la branche française de l'Union Internationale de Science du Sol (IUSS, International Union of Soil Science)</span>
@@ -229,10 +230,10 @@ a{color:#BF6525}a:hover{color:#5F3114}
 </footer>
 </div>
 </template>
-<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":5600}}'>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":false,"section":"Maquette"},"$preview":{"width":1280,"height":5600}}'>
 class Component extends DCLogic {
   renderVals() {
-    const show = this.props.showNew ?? true;
+    const show = this.props.showNew ?? false;
     return { rootClass: show ? 'root show-new' : 'root' };
   }
 }

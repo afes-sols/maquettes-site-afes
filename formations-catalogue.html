@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/les-sols/se-former/">
 <title>Formations · Catalogue · Maquettes site AFES</title>
 <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
@@ -183,11 +184,11 @@ a{color:#BF6525}a:hover{color:#5F3114}
 </footer>
 </div>
 </template>
-<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":4700}}'>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":false,"section":"Maquette"},"$preview":{"width":1280,"height":4700}}'>
 class Component extends DCLogic {
   constructor(props) { super(props); this.state = { f: 'all' }; }
   renderVals() {
-    const show = this.props.showNew ?? true;
+    const show = this.props.showNew ?? false;
     const all = [
       { cat: 'terrain', img: 'assets/f-promosols.png', tag: 'Terrain', state: 'Inscriptions ouvertes', title: 'Se former à la description de sol sur le terrain', text: 'Intégrer le dispositif PromoSolsTerrain pour appréhender la diversité des sols français, en se confrontant à 4 fosses pédologiques par session et en échangeant avec ses pairs.', format: '4 h à distance + 2 jours sur le terrain', public: '[à préciser]', session: '[date] · [lieu]', price: '[adhérent / non-adhérent]', cta: 'S’inscrire' },
       { cat: 'animation', img: 'assets/f-fresque.png', tag: 'Animation', state: 'Inscriptions ouvertes', title: 'Devenir animateur·rice pro de la Fresque du Sol', text: 'Maîtriser un atelier collaboratif de 3 heures sur les enjeux des sols, être référencé·e par l’ADEME et rejoindre une communauté d’expert·es engagée.', format: '[format]', public: 'Animateur·rices de la Fresque du Sol', session: '[date] · [lieu]', price: '[adhérent / non-adhérent]', cta: 'S’inscrire' },

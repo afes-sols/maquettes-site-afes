@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/nos-missions/animer/fresque-du-sol/">
 <title>Page intérieure E · Éléments flottants · Maquettes site AFES</title>
 <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
@@ -189,11 +190,11 @@ a{color:#BF6525}a:hover{color:#5F3114}
 </footer>
 </div>
 </template>
-<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":3700}}'>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":false,"section":"Maquette"},"$preview":{"width":1280,"height":3700}}'>
 class Component extends DCLogic {
   constructor(props) { super(props); this.state = { barOpen: true }; }
   renderVals() {
-    const show = this.props.showNew ?? true;
+    const show = this.props.showNew ?? false;
     return {
       rootClass: show ? 'root show-new' : 'root',
       barOpen: this.state.barOpen,

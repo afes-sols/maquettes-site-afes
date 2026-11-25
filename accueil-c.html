@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/">
 <title>Accueil C · Orientation et projets · Maquettes site AFES</title>
 <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
@@ -200,11 +201,11 @@ a{color:#BF6525}a:hover{color:#5F3114}
 </footer>
 </div>
 </template>
-<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":5300}}'>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":false,"section":"Maquette"},"$preview":{"width":1280,"height":5300}}'>
 class Component extends DCLogic {
   constructor(props) { super(props); this.state = { profile: 'pro' }; }
   renderVals() {
-    const show = this.props.showNew ?? true;
+    const show = this.props.showNew ?? false;
     const data = {
       etu: { label: 'Étudiant·e', routes: [
         { kind: 'Orientation', title: 'Trouver une formation en sciences du sol', text: 'Carte des licences et masters.' },

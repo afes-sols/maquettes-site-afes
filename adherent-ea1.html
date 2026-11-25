@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/connexion/">
 <title>Espace adhérent · option 1 : page d'accueil adhérent · Maquettes site AFES</title>
 <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
@@ -122,10 +123,10 @@ a{color:#BF6525}a:hover{color:#5F3114}
 <footer class="foot"><div class="wrap" style="padding:40px 15px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px"><img src="assets/logo-afes-blanc.png" alt="AFES" style="width:176px"><span style="font-size:14px">© 2023 AFES - Tous droits réservés</span></div></footer>
 </div>
 </template>
-<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"$preview":{"width":1280,"height":2300}}'>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":false,"section":"Maquette"},"$preview":{"width":1280,"height":2300}}'>
 class Component extends DCLogic {
   renderVals() {
-    const show = this.props.showNew ?? true;
+    const show = this.props.showNew ?? false;
     return { rootClass: show ? 'root show-new' : 'root' };
   }
 }

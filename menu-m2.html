@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="dc-original" content="https://www.afes.fr/">
 <title>Menu M2 · Méga-menu · Maquettes site AFES</title>
 <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700;800&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
@@ -84,11 +85,11 @@ a{color:#BF6525}a:hover{color:#5F3114}
 <div class="hero" style="height:470px"></div>
 </div>
 </template>
-<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":true,"section":"Maquette"},"ouvert":{"editor":"enum","options":["projets","former","afes","sols","missions","actus"],"default":"projets","section":"Maquette"},"$preview":{"width":1280,"height":640}}'>
+<script type="text/x-dc" data-dc-script data-props='{"showNew":{"editor":"boolean","default":false,"section":"Maquette"},"ouvert":{"editor":"enum","options":["projets","former","afes","sols","missions","actus"],"default":"projets","section":"Maquette"},"$preview":{"width":1280,"height":640}}'>
 class Component extends DCLogic {
   constructor(props) { super(props); this.state = { open: props.ouvert ?? 'projets' }; }
   renderVals() {
-    const show = this.props.showNew ?? true;
+    const show = this.props.showNew ?? false;
     const data = [
       { id: 'afes', label: "L'AFES", img: 'assets/missions.jpg',
         cols: [
