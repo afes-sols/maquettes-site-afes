@@ -10,3 +10,11 @@ Consultation : https://afes-sols.github.io/maquettes-site-afes/
 - les menus, filtres, profils et onglets sont cliquables.
 
 Les maquettes sont conçues sur un canevas Claude, puis exportées en HTML ; `dc-lite.js` est le petit moteur qui les rend interactives sans outil supplémentaire. Logo, photos et textes proviennent du site de l'AFES.
+
+## Le site complet (`clone/`)
+
+https://afes-sols.github.io/maquettes-site-afes/clone/
+
+Les 148 pages et 156 actualités d'afes.fr, reconstruites avec une sélection des options : méga-menu (M2), accueil C avec chiffres clés en tuiles, menu latéral D sur toutes les pages intérieures, liens manquants de la cartographie (« Pour aller plus loin »), actualités filtrables et reliées à leur projet, catalogue Se former, page Projets, espace adhérent (EA2), recherche dans tout le site et plan du site. Les photos restent servies par afes.fr.
+
+Le clone est généré par `_source/clone/build_clone.py` (dossier source hors dépôt, voir son LISEZ-MOI) : ne pas modifier `clone/` à la main.
