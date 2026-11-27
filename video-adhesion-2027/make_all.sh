@@ -17,8 +17,8 @@ for V in "${VERSIONS[@]}"; do
   ./mix.sh "out/$V/_muet_$FORMAT.mp4" "$V" "$MUSIC" "out/$V/AFES_adhesion2027_${V}_$FORMAT.mp4"
   rm -f "out/$V/_muet_$FORMAT.mp4"
   T=$(python3 -c "import json,re;d=json.loads(re.sub(r'^window.TIMELINE = |;\s*$','',open('data/timeline_$V.js').read()));print(round(d['scenes'][1]['start']-0.15,2))")
-  node render.js stills "$V" $W $H "out/$V/_still" "$T"
-  mv "out/$V/_still/"*.png "out/$V/miniature_$FORMAT.png" && rmdir "out/$V/_still"
+  node render.js stills "$V" $W $H "out/$V/_still_$FORMAT" "$T"
+  mv "out/$V/_still_$FORMAT/"*.png "out/$V/miniature_$FORMAT.png" && rmdir "out/$V/_still_$FORMAT"
   # YouTube refuse les vignettes de plus de 2 Mo : version JPEG pour le 16:9
   [ "$FORMAT" = 16x9 ] && ffmpeg -v error -y -i "out/$V/miniature_$FORMAT.png" -q:v 3 "out/$V/miniature_$FORMAT.jpg" && rm "out/$V/miniature_$FORMAT.png"
   true
