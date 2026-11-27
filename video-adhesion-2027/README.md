@@ -1,6 +1,6 @@
 # Vidéos « Adhésion 2027 » de l'AFES
 
-Document de travail du GT Communication (novembre 2026). Quatre courtes vidéos pour la campagne d'adhésion 2027, au format LinkedIn (1080 × 1350, 4:5), réutilisables plusieurs fois dans l'année : aucune n'annonce de date limite.
+Document de travail du GT Communication (novembre 2026). Quatre courtes vidéos pour la campagne d'adhésion 2027, chacune en trois formats (LinkedIn 4:5, Instagram et YouTube Shorts 9:16, YouTube 16:9), réutilisables plusieurs fois dans l'année : aucune n'annonce de date limite.
 
 ## Les quatre versions
 
@@ -11,7 +11,7 @@ Document de travail du GT Communication (novembre 2026). Quatre courtes vidéos 
 | `professionnels` | Pédologues, chargé·es d'études, conseiller·es, technicien·nes | Nicolas | 35 s | Reconnaissance des compétences en pédologie (réservée aux adhérent·es), PromoSolsTerrain, e-Sol, webinaires ; adhésion des structures |
 | `fin-de-carriere` | Fin de carrière et retraite | Fabien | 35 s | Garder le lien (webinaires, EGS, Lettre) et transmettre (relecture, sorties de terrain, partage d'expérience) ; soutien aux bourses Demolon |
 
-Fichiers produits dans `out/<version>/` : la vidéo (`AFES_adhesion2027_<version>_4x5.mp4`, son mixé à −14 LUFS), une miniature (`miniature_4x5.png`, à téléverser comme vignette sur LinkedIn) et les sous-titres (`sous-titres.srt`). Les sous-titres sont aussi incrustés dans l'image, sur l'horizon de surface, pour la lecture sans le son. Les textes de post proposés sont dans `textes-posts.md`.
+Fichiers produits dans `out/<version>/` : les vidéos dans les trois formats (son mixé à −14 LUFS), une miniature par format (à téléverser comme vignette) et les sous-titres (`sous-titres.srt`) ; voir « Formats ». Les sous-titres sont aussi incrustés dans l'image, sur l'horizon de surface, pour la lecture sans le son. Les textes de post proposés sont dans `textes-posts.md`.
 
 ## Parti pris
 
@@ -40,11 +40,19 @@ Le contenu de chaque version est décrit dans `versions.json` : scènes, textes 
 
 Outils nécessaires : Node.js avec Playwright (Chromium), Python 3 avec NumPy, ffmpeg. Chaque version se rend en 1 à 2 minutes.
 
-## Autres formats
+## Formats
 
-- **Instagram Reels, YouTube Shorts (9:16)** : `FORMAT=9x16 ./make_all.sh`. La mise en page s'adapte, mais les sous-titres incrustés tombent dans la zone recouverte par l'interface d'Instagram en bas d'écran : à remonter avant publication.
-- **Carré (1:1)** : `FORMAT=1x1 ./make_all.sh`, à vérifier image par image (moins de hauteur disponible).
-- **YouTube (16:9)** : demande une mise en page en colonnes, pas encore faite.
+| Format | Taille | Usage | Fichiers dans `out/<version>/` |
+|---|---|---|---|
+| 4:5 | 1080 × 1350 | LinkedIn, Facebook, fil Instagram | `AFES_adhesion2027_<version>_4x5.mp4`, `miniature_4x5.png` |
+| 9:16 | 1080 × 1920 | Instagram Reels et Stories, YouTube Shorts | `AFES_adhesion2027_<version>_9x16.mp4`, `miniature_9x16.png` |
+| 16:9 | 1920 × 1080 | YouTube | `AFES_adhesion2027_<version>_16x9.mp4`, `miniature_16x9.jpg` (moins de 2 Mo, comme l'exige YouTube) |
+
+Les sous-titres `sous-titres.srt` servent pour les trois formats (même voix, mêmes temps). Sur YouTube, les téléverser comme sous-titres français en plus de ceux incrustés permet la traduction automatique et l'indexation.
+
+- **Vertical (9:16)** : l'en-tête est descendu et les sous-titres passent au-dessus du sol, pour rester hors des zones recouvertes par l'interface d'Instagram (haut de l'écran et environ 35 % du bas, où s'affichent légende et boutons). Le sol décoratif occupe le bas de l'image.
+- **Horizontal (16:9)** : mise en page en deux colonnes (titre à gauche, cartes ou photos à droite) ; l'accroche est accompagnée d'une photo de sol.
+- Refaire un format : `FORMAT=9x16 ./make_all.sh` (ou `16x9`, `4x5`), éventuellement suivi des versions voulues. Un format carré existe aussi (`FORMAT=1x1`), non vérifié image par image.
 
 ## Fichiers
 

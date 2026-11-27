@@ -168,7 +168,7 @@
         "title": [{"html": "Faire vivre <span class='ocre'>les outils</span>", "at": "outils-0.3"}],
         "items": [
           {"icon": "profil", "title": "Formations de terrain", "sub": "PromoSolsTerrain", "at": "formations-0.2"},
-          {"icon": "network", "title": "La plateforme e-Sol", "sub": "les communautés du sol", "logo": "assets/logo-esol.png", "at": "plateforme-0.25"},
+          {"icon": "network", "title": "La plateforme e‑Sol", "sub": "les communautés du sol", "logo": "assets/logo-esol.png", "at": "plateforme-0.25"},
           {"icon": "screen", "title": "Les webinaires", "sub": "scientifiques, ouverts à toutes et tous", "at": "webinaires-0.25"}
         ]},
       {"type": "statement", "at": "votre#2", "icon": "building", "lines": [

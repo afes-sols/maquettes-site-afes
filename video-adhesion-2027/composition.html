@@ -110,6 +110,38 @@ h2 .part{display:inline-block}
 .end h2{font-size:8.8rem;margin-top:3.6rem;line-height:1.02}
 .end .url{margin-top:3.6rem;font-weight:800;font-size:4.6rem;color:var(--vert)}
 .end .url small{display:block;font-weight:600;font-size:3rem;color:var(--brun-m);margin-top:.6rem}
+.lines .txt{display:flex;flex-direction:column;align-items:flex-start}
+.big .txt,.end .txt,.end .idn{display:flex;flex-direction:column;align-items:center}
+.photoSide{flex:none;overflow:hidden;border-radius:3.2rem;box-shadow:0 1.6rem 4rem rgba(95,49,20,.18)}
+.photoSide img{width:100%;height:100%;object-fit:cover}
+
+/* format vertical (Instagram Reels, Stories, YouTube Shorts) : sous-titres au-dessus du sol,
+   hors de la zone basse recouverte par l'interface */
+html.tall #cap{color:var(--brun)}
+html.tall #cap span.now{color:var(--ocre)}
+html.tall .end h2{font-size:7.8rem}
+
+/* format horizontal (YouTube) : mises en page en deux colonnes */
+html.wide .lines{flex-direction:row;align-items:center;justify-content:space-between}
+html.wide .lines .photoSide{width:46rem;height:56rem}
+html.wide .intro{display:grid;grid-template-columns:auto 1fr;column-gap:10rem;align-content:center;align-items:center}
+html.wide .intro .row{grid-column:1;grid-row:1 / span 2;justify-content:flex-start;gap:5rem}
+html.wide .intro .lead{grid-column:2;grid-row:1;margin:0 0 2.4rem;align-self:end}
+html.wide .intro .chips{grid-column:2;grid-row:2;align-self:start}
+html.wide .statement{display:grid;grid-template-columns:46% 1fr;column-gap:8rem;align-items:center;align-content:center}
+html.wide .statement .photoRect{height:56rem;margin:0}
+html.wide .statement .bigIco{margin:0;justify-self:center;width:30rem;height:30rem}
+html.wide .statement .txt{grid-column:2}
+html.wide .cards,html.wide .tiles{display:grid;grid-template-columns:40% 1fr;grid-template-rows:auto auto;column-gap:8rem;align-content:center}
+html.wide .cards .kicker,html.wide .tiles .kicker{grid-column:1;grid-row:1;align-self:end}
+html.wide .cards h2,html.wide .tiles h2{grid-column:1;grid-row:2;align-self:start;margin-bottom:0}
+html.wide .cardList,html.wide .tileList{grid-column:2;grid-row:1 / span 2;align-self:center}
+html.wide .big{flex-direction:row;justify-content:center;gap:10rem;text-align:left}
+html.wide .big .txt{align-items:flex-start}
+html.wide .big h2{margin-top:0}
+html.wide .end{flex-direction:row;justify-content:center;gap:12rem}
+html.wide .end .txt{align-items:flex-start;text-align:left}
+html.wide .end h2{margin-top:0}
 </style>
 </head>
 <body>
@@ -191,7 +223,9 @@ function titleParts(arr){
 const BUILD = {
   lines(s, root){
     root.classList.add('lines');
-    s.lines.forEach(l=>{ const e=h('div','ln',l.html); e.style.fontSize=l.size+'rem'; root.appendChild(reg(e, l.t-.05, {dy:44, s:.86, back:true, d:.42})); });
+    const tx = h('div','txt'); root.appendChild(tx);
+    s.lines.forEach(l=>{ const e=h('div','ln',l.html); e.style.fontSize=(l.size*L.lineScale)+'rem'; tx.appendChild(reg(e, l.t-.05, {dy:44, s:.86, back:true, d:.42})); });
+    if(MODE==='wide'){ const ph=h('div','photoSide'); ph.innerHTML=`<img src="${s.photo||'assets/hero-mobile.jpg'}" alt="">`; s._photo=ph.querySelector('img'); root.appendChild(reg(ph, s.t+.25, {dy:0, s:.9, d:.7})); }
     const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
     svg.setAttribute('class','vag'); svg.setAttribute('width', 300*R); svg.setAttribute('height', 30*R);
     const p = document.createElementNS('http://www.w3.org/2000/svg','path');
@@ -201,7 +235,7 @@ const BUILD = {
     for(let i=0;i<7;i++){ const f=v=>(v*s4).toFixed(2); d += ` c${f(.9)},${f(-.9)} ${f(2.37)},${f(-.9)} ${f(3.27)},0 l${f(.97)},${f(.97)} c${f(.9)},${f(.9)} ${f(2.37)},${f(.9)} ${f(3.27)},0 l${f(.97)},${f(-.97)}`; }
     p.setAttribute('d', d);
     svg.setAttribute('width', 7*P + 10*R);
-    svg.appendChild(p); root.appendChild(svg);
+    svg.appendChild(p); tx.appendChild(svg);
     s._vag = p; s._vagT = s.lines[s.lines.length-1].t + .2;
   },
   intro(s, root){
@@ -222,7 +256,8 @@ const BUILD = {
     root.classList.add('statement');
     if(s.photo){ const ph=h('div','photoRect'); ph.innerHTML=`<img src="${s.photo}" alt="">`; s._photo=ph.querySelector('img'); if(s.photoPos){ s._photo.style.objectPosition=s.photoPos; s._photo.style.transformOrigin=s.photoPos; } root.appendChild(reg(ph, s.t-.05, {dy:30, s:.94, d:.6})); }
     if(s.icon){ const ic=h('div','ico bigIco', icon(s.icon)); root.appendChild(reg(ic, s.t-.05, {dy:0, s:.5, back:true, d:.6})); }
-    s.lines.forEach(l=>{ const e=h('div','ln',l.html); e.style.fontSize=l.size+'rem'; if(l.weight) e.style.fontWeight=l.weight; if(l.color) e.style.color=`var(--${l.color})`; root.appendChild(reg(e, l.t-.05, {dy:34})); });
+    const tx = h('div','txt'); root.appendChild(tx);
+    s.lines.forEach(l=>{ const e=h('div','ln',l.html); e.style.fontSize=l.size+'rem'; if(l.weight) e.style.fontWeight=l.weight; if(l.color) e.style.color=`var(--${l.color})`; tx.appendChild(reg(e, l.t-.05, {dy:34})); });
   },
   cards(s, root){
     root.classList.add('cards');
@@ -259,24 +294,34 @@ const BUILD = {
       s._ring = box.querySelector('.ring'); s._dot = box.querySelector('.dot');
     } else { box.appendChild(num); box.appendChild(unit); }
     root.appendChild(reg(box, s.t-.1, {dy:0, s:.7, back:true, d:.5}));
-    if(s.h) root.appendChild(reg(h('h2','',s.h.html), s.h.t, {dy:30}));
-    if(s.chip) root.appendChild(reg(h('div','chip2',s.chip.html), s.chip.t-.1, {dy:20, s:.8, back:true}));
+    const tx = h('div','txt'); root.appendChild(tx);
+    if(s.h) tx.appendChild(reg(h('h2','',s.h.html), s.h.t, {dy:30}));
+    if(s.chip) tx.appendChild(reg(h('div','chip2',s.chip.html), s.chip.t-.1, {dy:20, s:.8, back:true}));
   },
   end(s, root){
     root.classList.add('end');
-    root.appendChild(reg(Object.assign(h('img','logo'),{src:'assets/logo-afes.svg',alt:'AFES'}), s.t-.1, {dy:0, s:.5, back:true, d:.6}));
-    root.appendChild(reg(h('div','name',"Association française pour l'étude du sol"), s.t+.2, {dy:16}));
-    root.appendChild(reg(h('div','pill','Adhésion 2027'), s.t+.25, {dy:20, s:.7, back:true}));
+    const idn = h('div','idn'), tx = h('div','txt'); root.appendChild(idn); root.appendChild(tx);
+    idn.appendChild(reg(Object.assign(h('img','logo'),{src:'assets/logo-afes.svg',alt:'AFES'}), s.t-.1, {dy:0, s:.5, back:true, d:.6}));
+    idn.appendChild(reg(h('div','name',"Association française pour l'étude du sol"), s.t+.2, {dy:16}));
+    idn.appendChild(reg(h('div','pill','Adhésion 2027'), s.t+.25, {dy:20, s:.7, back:true}));
     const h2 = h('h2');
     s.tagline.forEach((p,i)=>{ if(i) h2.appendChild(h('br')); h2.appendChild(reg(h('span','part',p.html), p.t-.08, {dy:36})); });
-    root.appendChild(h2);
-    root.appendChild(reg(h('div','url',`${s.url}<small>${s.urlSub}</small>`), TL.vo_end+.1, {dy:20}));
+    tx.appendChild(h2);
+    tx.appendChild(reg(h('div','url',`${s.url}<small>${s.urlSub}</small>`), TL.vo_end+.1, {dy:20}));
   }
 };
 
-// hauteur de la bande de sol (fraction de la hauteur d'image) selon le type de scène
-const BAND = {lines:.36, end:.30, def:.20};
-const bandOf = type => BAND[type] || BAND.def;
+// Géométrie selon le format : hauteur de la bande de sol (fraction de la hauteur d'image)
+// par type de scène, position de l'en-tête et des scènes (rem), marges latérales (rem).
+// En vertical, l'en-tête descend et les sous-titres passent au-dessus du sol pour rester
+// hors des zones recouvertes par l'interface d'Instagram (haut et ~35 % du bas).
+const LAYOUT = {
+  std:  {band:{lines:.36, end:.30, def:.20}, hdrTop:5,  top:18, endTop:6,  side:6,  capAbove:false, lineScale:1},
+  tall: {band:{lines:.40, end:.36, def:.33}, hdrTop:17, top:30, endTop:20, side:10, capAbove:true,  lineScale:.9},
+  wide: {band:{lines:.26, end:.28, def:.20}, hdrTop:5,  top:17, endTop:7,  side:10, capAbove:false, lineScale:1},
+};
+let MODE = 'std', L = LAYOUT.std;
+const bandOf = type => L.band[type] || L.band.def;
 
 function sceneBounds(i){
   const s = SC[i], next = SC[i+1];
@@ -322,7 +367,7 @@ function drawCaptions(t, soil){
   const sc = sceneAt(t);
   const hidden = sc>=0 && SC[sc].captions === false;
   if(idx !== capIdx){ capIdx = idx; cap.innerHTML = idx<0 ? '' : TL.captions[idx].words.map(w=>`<span>${w.t}</span>`).join(''); }
-  cap.style.top = (soil.top + soil.band*.27) + 'px';
+  cap.style.top = (L.capAbove ? soil.top - 75*R : soil.top + soil.band*.27) + 'px';
   cap.style.transform = 'translateY(-50%)';
   if(idx<0 || hidden){ cap.style.opacity = 0; return; }
   const c = TL.captions[idx];
@@ -373,13 +418,19 @@ function render(t){
 async function init(){
   TL = window.TIMELINE; SC = TL.scenes;
   W = innerWidth; H = innerHeight; R = Math.min(W,H)/1080;
+  MODE = W/H > 1.3 ? 'wide' : (H/W > 1.5 ? 'tall' : 'std'); L = LAYOUT[MODE];
+  document.documentElement.classList.add(MODE);
   document.documentElement.style.fontSize = (10*R) + 'px';
+  const side = (L.side*10*R) + 'px';
+  Object.assign($('hdr').style, {left:side, right:side, top:(L.hdrTop*10*R)+'px'});
+  Object.assign($('cap').style, {left:side, right:side});
   buildSoil();
   const host = $('scenes');
   SC.forEach(s=>{
     const root = h('section','scene'); s._root = root;
-    root.style.top = ((s.type==='end' ? 6 : 18)*10*R) + 'px';
-    root.style.bottom = (bandOf(s.type)*H + 30*R) + 'px';
+    root.style.top = ((s.type==='end' ? L.endTop : L.top)*10*R) + 'px';
+    root.style.bottom = (bandOf(s.type)*H + ((L.capAbove && s.captions!==false) ? 150 : 30)*R) + 'px';
+    root.style.left = root.style.right = (L.side*10*R) + 'px';
     BUILD[s.type](s, root);
     host.appendChild(root);
   });
