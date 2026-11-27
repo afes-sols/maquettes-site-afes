@@ -1,0 +1,246 @@
+{
+  "_lisez-moi": "Une entrée par version de la vidéo. 'at' = mot de la voix off qui déclenche l'apparition (minuscules, sans ponctuation ; 'mot#2' = 2e occurrence ; '+0.3' = décalage en secondes). 'captions' = lignes de sous-titres dans l'ordre de la voix, avec la graphie affichée.",
+
+  "generale": {
+    "label": "Version générale",
+    "voice": {"name": "Koraly", "voice_id": "F1toM6PcP54s45kOOAyV"},
+    "captions": [
+      "Un sol, ça se décrit.",
+      "Ça se mesure.",
+      "Ça se cartographie…",
+      "et ça s'enseigne.",
+      "Depuis 1934, l'AFES réunit",
+      "celles et ceux",
+      "qui étudient les sols :",
+      "dans la recherche, l'enseignement,",
+      "les bureaux d'études",
+      "ou sur le terrain.",
+      "Adhérer, c'est rejoindre l'Union",
+      "internationale de la science du sol,",
+      "recevoir la Lettre de l'AFES,",
+      "et profiter de tarifs réduits",
+      "aux Journées d'étude des sols.",
+      "C'est aussi faire vivre,",
+      "pour toutes et tous :",
+      "la revue Étude et Gestion des Sols,",
+      "en accès libre.",
+      "Les webinaires scientifiques.",
+      "Les bourses Demolon",
+      "pour les jeunes chercheurs.",
+      "Adhérer prend trois minutes.",
+      "Adhésion 2027 :",
+      "comprendre les sols, ensemble."
+    ],
+    "scenes": [
+      {"type": "lines", "at": "un", "captions": false, "lines": [
+        {"html": "Un sol,", "at": "un", "size": 14},
+        {"html": "ça se <span class='ocre'>décrit</span>.", "at": "décrit-0.25", "size": 9},
+        {"html": "ça se <span class='ocre'>mesure</span>.", "at": "mesure-0.25", "size": 9},
+        {"html": "ça se <span class='ocre'>cartographie</span>…", "at": "cartographie-0.3", "size": 9},
+        {"html": "et ça s'<span class='ocre'>enseigne</span>.", "at": "s'enseigne-0.3", "size": 9}
+      ]},
+      {"type": "intro", "at": "depuis", "label": "Depuis", "year": 1934, "yearAt": "1934", "photo": "assets/actu-jes.jpg",
+        "lead": {"html": "<b>L'AFES</b> réunit celles et ceux<br>qui étudient les sols :", "at": "réunit-0.2"},
+        "chips": [
+          {"text": "la recherche", "icon": "loupe", "at": "recherche"},
+          {"text": "l'enseignement", "icon": "book", "at": "l'enseignement"},
+          {"text": "les bureaux d'études", "icon": "briefcase", "at": "bureaux"},
+          {"text": "le terrain", "icon": "profil", "at": "ou-0.05"}
+        ]},
+      {"type": "cards", "at": "adhérer", "kicker": {"text": "Ce que vous recevez", "color": "vert"},
+        "title": [{"html": "<span class='ocre'>Adhérer,</span>", "at": "adhérer"}, {"html": "c'est…", "at": "c'est"}],
+        "items": [
+          {"icon": "globe", "title": "Rejoindre l'IUSS", "sub": "l'Union internationale de la science du sol", "at": "rejoindre"},
+          {"icon": "mail", "title": "Recevoir la Lettre de l'AFES", "sub": "et la liste réservée aux adhérent·es", "at": "recevoir"},
+          {"icon": "ticket", "title": "Des tarifs réduits", "sub": "aux Journées d'Étude des Sols", "logo": "assets/logo-jes.png", "at": "profiter"}
+        ]},
+      {"type": "tiles", "at": "c'est#2", "kicker": {"text": "Ce que vous faites vivre", "color": "ocre"},
+        "title": [{"html": "Pour <span class='ocre'>toutes et tous</span>", "at": "toutes"}],
+        "items": [
+          {"img": "assets/logo-egs.png", "contain": true, "title": "La revue EGS", "sub": "en accès libre", "at": "revue-0.15"},
+          {"img": "assets/missions.jpg", "title": "Les webinaires scientifiques", "sub": "ouverts à toutes et tous", "at": "webinaires-0.25"},
+          {"img": "assets/p-demolon.png", "title": "Les bourses Demolon", "sub": "pour les jeunes chercheur·ses", "at": "bourses-0.25"}
+        ]},
+      {"type": "big", "at": "adhérer#2", "ring": true, "number": "3", "unit": "minutes",
+        "h": {"html": "pour adhérer en ligne", "at": "adhérer#2+0.3"},
+        "chip": {"html": "<b>dès 18&nbsp;€</b> par an", "at": "minutes"}},
+      {"type": "end", "at": "adhésion#last", "captions": false, "tagline": [
+        {"html": "Comprendre les sols,", "at": "comprendre"},
+        {"html": "<span class='ocre'>ensemble.</span>", "at": "ensemble-0.1"}
+      ], "url": "afes.fr › Adhérer", "urlSub": "Adhésion en ligne sur HelloAsso"}
+    ]
+  },
+
+  "etudiants": {
+    "label": "Étudiant·es et doctorant·es",
+    "voice": {"name": "Lisa", "voice_id": "SS96pcQPRECLpa3gaFwY"},
+    "captions": [
+      "Vous étudiez les sols ?",
+      "En master, en thèse,",
+      "en école d'ingénieurs ?",
+      "L'AFES, la société savante",
+      "des sciences du sol,",
+      "vous ouvre son réseau.",
+      "Avec l'adhésion :",
+      "les bourses Demolon",
+      "pour partir en congrès,",
+      "l'Union internationale",
+      "de la science du sol,",
+      "et des tarifs réduits",
+      "aux Journées d'étude des sols,",
+      "pour rencontrer celles et ceux",
+      "qui font la discipline.",
+      "Tout ça pour 18 € par an.",
+      "Adhésion 2027, en trois minutes :",
+      "comprendre les sols, ensemble."
+    ],
+    "scenes": [
+      {"type": "lines", "at": "vous", "captions": false, "lines": [
+        {"html": "Vous étudiez", "at": "vous", "size": 12.5},
+        {"html": "<span class='ocre'>les sols ?</span>", "at": "sols-0.2", "size": 12.5},
+        {"html": "En master, en thèse,", "at": "master-0.3", "size": 7.4},
+        {"html": "en école d'ingénieurs ?", "at": "école-0.3", "size": 7.4}
+      ]},
+      {"type": "statement", "at": "l'afès", "photo": "assets/actu-jes.jpg", "lines": [
+        {"html": "La société savante des sciences du sol", "at": "société-0.2", "size": 5.2, "weight": 700},
+        {"html": "vous ouvre <span class='ocre'>son réseau.</span>", "at": "ouvre-0.2", "size": 9.6}
+      ]},
+      {"type": "cards", "at": "avec", "kicker": {"text": "Étudiant·es, doctorant·es", "color": "vert"},
+        "title": [{"html": "Avec <span class='ocre'>l'adhésion</span>", "at": "avec"}],
+        "items": [
+          {"icon": "plane", "title": "Les bourses Demolon", "sub": "pour partir en congrès", "at": "bourses-0.2"},
+          {"icon": "globe", "title": "L'IUSS", "sub": "l'Union internationale de la science du sol", "at": "l'union-0.2"},
+          {"icon": "ticket", "title": "Des tarifs réduits", "sub": "aux Journées d'Étude des Sols, pour rencontrer la discipline", "logo": "assets/logo-jes.png", "at": "tarifs-0.3"}
+        ]},
+      {"type": "big", "at": "tout", "ring": false, "number": "18&nbsp;€", "numberSize": 21, "unit": "par an",
+        "h": {"html": "tarif étudiant·es", "at": "tout+0.4"},
+        "chip": {"html": "et demandeur·ses d'emploi", "at": "an"}},
+      {"type": "end", "at": "adhésion#last", "captions": false, "tagline": [
+        {"html": "Comprendre les sols,", "at": "comprendre"},
+        {"html": "<span class='ocre'>ensemble.</span>", "at": "ensemble-0.1"}
+      ], "url": "afes.fr › Adhérer", "urlSub": "En 3 minutes sur HelloAsso"}
+    ]
+  },
+
+  "professionnels": {
+    "label": "Professionnel·les en activité",
+    "voice": {"name": "Nicolas", "voice_id": "6kKGX0D7lkM7Ruz1LUMi"},
+    "captions": [
+      "Pédologue, chargée d'études,",
+      "conseiller, technicienne :",
+      "les sols sont votre métier ?",
+      "Depuis 1934, l'AFES est la société",
+      "savante des sciences du sol.",
+      "Adhérer, c'est pouvoir",
+      "faire reconnaître",
+      "vos compétences en pédologie :",
+      "une démarche réservée aux adhérents.",
+      "C'est aussi faire vivre les outils",
+      "de toute la profession :",
+      "les formations de terrain",
+      "PromoSolsTerrain,",
+      "la plateforme e-Sol,",
+      "les webinaires scientifiques.",
+      "Votre structure peut adhérer,",
+      "avec un tarif réduit",
+      "pour ses salariés.",
+      "Adhésion 2027, en trois minutes :",
+      "comprendre les sols, ensemble."
+    ],
+    "scenes": [
+      {"type": "lines", "at": "pédologue", "captions": false, "lines": [
+        {"html": "Pédologue,", "at": "pédologue", "size": 8},
+        {"html": "chargé·e d'études,", "at": "chargée", "size": 8},
+        {"html": "conseiller·e,", "at": "conseiller", "size": 8},
+        {"html": "technicien·ne…", "at": "technicienne", "size": 8},
+        {"html": "<span class='ocre'>les sols sont</span>", "at": "sols-0.15", "size": 11},
+        {"html": "<span class='ocre'>votre métier ?</span>", "at": "votre-0.1", "size": 11}
+      ]},
+      {"type": "statement", "at": "depuis", "photo": "assets/missions.jpg", "lines": [
+        {"html": "Depuis 1934,", "at": "depuis", "size": 6, "weight": 700, "color": "ocre"},
+        {"html": "la société savante des sciences du sol", "at": "société-0.2", "size": 9}
+      ]},
+      {"type": "statement", "at": "adhérer", "icon": "medal", "lines": [
+        {"html": "Faire reconnaître vos compétences en pédologie", "at": "reconnaître-0.3", "size": 8.6},
+        {"html": "<span class='chipTxt'>réservé aux adhérent·es</span>", "at": "réservée-0.2", "size": 4}
+      ]},
+      {"type": "cards", "at": "c'est#2", "kicker": {"text": "Pour toute la profession", "color": "ocre"},
+        "title": [{"html": "Faire vivre <span class='ocre'>les outils</span>", "at": "outils-0.3"}],
+        "items": [
+          {"icon": "profil", "title": "Formations de terrain", "sub": "PromoSolsTerrain", "at": "formations-0.2"},
+          {"icon": "network", "title": "La plateforme e-Sol", "sub": "les communautés du sol", "logo": "assets/logo-esol.png", "at": "plateforme-0.25"},
+          {"icon": "screen", "title": "Les webinaires", "sub": "scientifiques, ouverts à toutes et tous", "at": "webinaires-0.25"}
+        ]},
+      {"type": "statement", "at": "votre#2", "icon": "building", "lines": [
+        {"html": "Votre structure peut adhérer", "at": "structure-0.2", "size": 9},
+        {"html": "<span class='chipTxt'>tarif réduit pour ses salarié·es</span>", "at": "tarif-0.2", "size": 4}
+      ]},
+      {"type": "end", "at": "adhésion#last", "captions": false, "tagline": [
+        {"html": "Comprendre les sols,", "at": "comprendre"},
+        {"html": "<span class='ocre'>ensemble.</span>", "at": "ensemble-0.1"}
+      ], "url": "afes.fr › Adhérer", "urlSub": "En 3 minutes sur HelloAsso"}
+    ]
+  },
+
+  "fin-de-carriere": {
+    "label": "Fin de carrière et retraite",
+    "voice": {"name": "Fabien", "voice_id": "GBp66gF5eXCkPPSbXSDf"},
+    "captions": [
+      "Des années à décrire,",
+      "à cartographier",
+      "ou à enseigner les sols ?",
+      "Ce savoir est précieux.",
+      "À l'AFES, il continue de servir.",
+      "Adhérer, c'est garder le lien",
+      "avec la communauté :",
+      "les webinaires, la revue",
+      "Étude et Gestion des Sols,",
+      "la Lettre de l'AFES.",
+      "C'est aussi transmettre :",
+      "relire des articles,",
+      "accompagner une sortie de terrain,",
+      "partager votre expérience",
+      "avec les plus jeunes.",
+      "Et votre adhésion aide de jeunes",
+      "chercheurs à partir en congrès,",
+      "grâce aux bourses Demolon.",
+      "Adhésion 2027, en trois minutes :",
+      "comprendre les sols, ensemble."
+    ],
+    "scenes": [
+      {"type": "lines", "at": "des", "captions": false, "lines": [
+        {"html": "Des années", "at": "des", "size": 12},
+        {"html": "à <span class='ocre'>décrire</span>,", "at": "décrire-0.2", "size": 8.4},
+        {"html": "à <span class='ocre'>cartographier</span>", "at": "cartographier-0.2", "size": 8.4},
+        {"html": "ou à <span class='ocre'>enseigner</span>", "at": "enseigner-0.25", "size": 8.4},
+        {"html": "les sols ?", "at": "sols-0.1", "size": 12}
+      ]},
+      {"type": "statement", "at": "ce", "photo": "assets/actu-jes.jpg", "lines": [
+        {"html": "Ce savoir est <span class='ocre'>précieux.</span>", "at": "ce", "size": 8.6},
+        {"html": "À l'AFES, il continue de servir.", "at": "l'afès-0.1", "size": 6, "weight": 700}
+      ]},
+      {"type": "cards", "at": "adhérer", "kicker": {"text": "Adhérer, c'est", "color": "vert"},
+        "title": [{"html": "garder <span class='ocre'>le lien</span>", "at": "garder-0.1"}],
+        "items": [
+          {"icon": "screen", "title": "Les webinaires", "sub": "scientifiques", "at": "webinaires-0.25"},
+          {"icon": "book", "title": "La revue EGS", "sub": "Étude et Gestion des Sols", "logo": "assets/logo-egs.png", "at": "revue-0.2"},
+          {"icon": "mail", "title": "La Lettre de l'AFES", "sub": "et la liste des adhérent·es", "at": "lettre-0.3"}
+        ]},
+      {"type": "cards", "at": "c'est#2", "kicker": {"text": "C'est aussi", "color": "ocre"},
+        "title": [{"html": "<span class='ocre'>transmettre</span>", "at": "transmettre-0.2"}],
+        "items": [
+          {"icon": "pen", "title": "Relire des articles", "sub": "pour la revue Étude et Gestion des Sols", "at": "relire-0.2"},
+          {"icon": "profil", "title": "Accompagner une sortie", "sub": "sur le terrain", "at": "accompagner-0.2"},
+          {"icon": "people", "title": "Partager votre expérience", "sub": "avec les plus jeunes", "at": "partager-0.2"}
+        ]},
+      {"type": "statement", "at": "et#last", "photo": "assets/p-demolon.png", "photoPos": "50% 22%", "lines": [
+        {"html": "Votre adhésion aide de jeunes chercheur·ses à partir en congrès", "at": "aide-0.2", "size": 6.6},
+        {"html": "<span class='chipTxt'>Bourses Demolon</span>", "at": "bourses-0.2", "size": 4}
+      ]},
+      {"type": "end", "at": "adhésion#last", "captions": false, "tagline": [
+        {"html": "Comprendre les sols,", "at": "comprendre"},
+        {"html": "<span class='ocre'>ensemble.</span>", "at": "ensemble-0.1"}
+      ], "url": "afes.fr › Adhérer", "urlSub": "En 3 minutes sur HelloAsso"}
+    ]
+  }
+}
