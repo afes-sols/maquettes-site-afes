@@ -21,7 +21,9 @@ VO_OFFSET = 0.45   # silence avant la première syllabe (s)
 TAIL = 3.4         # durée du carton final après la dernière syllabe (s)
 
 # Graphie affichée quand elle diffère de celle donnée à la synthèse vocale.
-DISPLAY = {"l'Afès": "l'AFES"}
+# « l'AFES » se prononce d'un seul mot, comme « la fesse » : la voix off l'écrit
+# en alphabet phonétique (/lafɛs/), que le modèle eleven_v4 lit tel quel.
+DISPLAY = {"/lafɛs/": "l'AFES", "l'Afès": "l'AFES", "L'Afès": "L'AFES"}
 
 
 def norm(s):

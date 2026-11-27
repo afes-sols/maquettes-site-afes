@@ -7,8 +7,8 @@ Document de travail du GT Communication (novembre 2026). Quatre courtes vidéos 
 | Version | Public | Voix off (ElevenLabs) | Durée | Ce qu'elle met en avant |
 |---|---|---|---|---|
 | `generale` | Tous publics | Koraly | 42 s | L'AFES, société savante depuis 1934 ; ce que l'adhésion apporte (IUSS, Lettre, tarifs JES) ; ce qu'elle fait vivre pour tous (revue EGS en accès libre, webinaires, bourses Demolon) |
-| `etudiants` | Étudiant·es, doctorant·es, jeunes chercheur·ses | Lisa | 29 s | Bourses Demolon, IUSS, tarif réduit aux JES pour rencontrer la discipline, 18 € par an |
-| `professionnels` | Pédologues, chargé·es d'études, conseiller·es, technicien·nes | Nicolas | 34 s | Reconnaissance des compétences en pédologie (réservée aux adhérent·es), PromoSolsTerrain, e-Sol, webinaires ; adhésion des structures |
+| `etudiants` | Étudiant·es, doctorant·es, jeunes chercheur·ses | Clémence | 31 s | Bourses Demolon, IUSS, tarif réduit aux JES pour rencontrer la discipline, 18 € par an |
+| `professionnels` | Pédologues, chargé·es d'études, conseiller·es, technicien·nes | Nicolas | 35 s | Reconnaissance des compétences en pédologie (réservée aux adhérent·es), PromoSolsTerrain, e-Sol, webinaires ; adhésion des structures |
 | `fin-de-carriere` | Fin de carrière et retraite | Fabien | 35 s | Garder le lien (webinaires, EGS, Lettre) et transmettre (relecture, sorties de terrain, partage d'expérience) ; soutien aux bourses Demolon |
 
 Fichiers produits dans `out/<version>/` : la vidéo (`AFES_adhesion2027_<version>_4x5.mp4`, son mixé à −14 LUFS), une miniature (`miniature_4x5.png`, à téléverser comme vignette sur LinkedIn) et les sous-titres (`sous-titres.srt`). Les sous-titres sont aussi incrustés dans l'image, sur l'horizon de surface, pour la lecture sans le son. Les textes de post proposés sont dans `textes-posts.md`.
@@ -26,7 +26,7 @@ Fichiers produits dans `out/<version>/` : la vidéo (`AFES_adhesion2027_<version
 1. **Tarifs 2027** : « 18 € par an » (étudiant·es, demandeur·ses d'emploi) et « tarif réduit pour les salarié·es d'une structure adhérente » reprennent les tarifs 2026. La version étudiante dit « 18 € » à l'oral : si le tarif change, il faut régénérer la voix.
 2. **Bourses Demolon** : la version étudiante les présente comme un avantage de l'adhésion (section 4 du plan d'action). Les conditions exactes d'accès sont à confirmer.
 3. **Version fin de carrière** : « relire des articles » et « accompagner une sortie de terrain » sont des façons de contribuer, pas des dispositifs formalisés. À valider avec la revue EGS et les responsables de PromoSolsTerrain.
-4. **Écoute** : prononciation de « AFES » (écrit « Afès » pour la synthèse vocale) et ton de chaque voix.
+4. **Écoute** : prononciation de « l'AFES », d'un seul mot comme « la fesse » (écrit /lafɛs/ en alphabet phonétique pour la synthèse vocale ; une transcription automatique de test entend bien « l'Afess »), et ton de chaque voix.
 5. **Droits** : usage commercial de la musique ElevenLabs selon l'abonnement ; photos reprises d'afes.fr (personnes reconnaissables sur `p-demolon.png`, `actu-jes.jpg`, `missions.jpg`).
 6. **Lien** : la vidéo renvoie à « afes.fr › Adhérer » ; le lien HelloAsso 2027 est à mettre dans le texte du post.
 
@@ -35,7 +35,7 @@ Fichiers produits dans `out/<version>/` : la vidéo (`AFES_adhesion2027_<version
 Le contenu de chaque version est décrit dans `versions.json` : scènes, textes affichés, sous-titres et mot de la voix off qui déclenche chaque apparition (`"at": "bourses-0.2"` = 0,2 s avant le mot « bourses »).
 
 - Changer un texte affiché : modifier `versions.json`, puis `./make_all.sh <version>`.
-- Changer la voix off : générer le nouveau texte dans ElevenLabs (flow « AFES – vidéo adhésion 2027 »), enregistrer l'audio dans `audio/vo_<version>.mp3` et l'horodatage mot à mot (transcription Scribe) dans `data/words_<version>.json`, mettre à jour `captions` dans `versions.json`, puis `./make_all.sh <version>`.
+- Changer la voix off : générer le nouveau texte dans ElevenLabs (flow « AFES – vidéo adhésion 2027 », modèle eleven_v4, « l'AFES » écrit /lafɛs/), enregistrer l'audio dans `audio/vo_<version>.mp3` et l'horodatage mot à mot (transcription Scribe) dans `data/words_<version>.json`, mettre à jour `captions` dans `versions.json`, puis `./make_all.sh <version>`.
 - Prévisualiser dans un navigateur : `composition.html?v=generale&play=1` (sans le son), ou `&t=12.5` pour un instant précis.
 
 Outils nécessaires : Node.js avec Playwright (Chromium), Python 3 avec NumPy, ffmpeg. Chaque version se rend en 1 à 2 minutes.
